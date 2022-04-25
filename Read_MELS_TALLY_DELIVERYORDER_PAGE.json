@@ -1,0 +1,187 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_DO_PAGE": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_DO_PAGE"
+				],
+				"description": "Read TALLY_DELIVERYORDER_PAGE",
+				"operationId": "Read_TALLY_DELIVERYORDER_PAGE",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CUSORDERNO_SONO",
+						"in": "body",
+						"description": "CUSORDERNO_SONO",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CUSORDERNO_SONO"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustOrderNo_SoNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"ORDER_DATE": null,
+							"SO_NO": null,
+							"CUSTORDERNO": null,
+							"CUSTCONTAINER": null,
+							"DO_NO": null,
+							"LOTNO": null,
+							"DELIVERY_TO": null,
+							"PICK_UP_FROM": null,
+							"GRADE": null,
+							"NO_OF_BAGS": null,
+							"WEIGHT": null,
+							"REMARKS": null,
+							"SIGNATURE": null,
+							"NAME": null,
+							"IC": null,
+							"CUSORDERNO_SONO": null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustOrderNo_SoNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallyDeliveryOrderPage"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustOrderNo_SoNo": {
+			"description": "Model for CustOrderNo_SoNo",
+			"required": [
+				"CUSORDERNO_SONO"
+			],
+			"properties": {
+				"CUSORDERNO_SONO": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadTallyDeliveryOrderPage": {
+			"description": "Model for ReadTallyDeliveryOrderPage",
+			"required": [
+				"CUSORDERNO_SONO"
+			],
+			"properties": {
+				"ORDER_DATE": {
+					"type": "date",
+					"x-example": ""
+				},
+				"SO_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DO_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOTNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DELIVERY_TO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PICK_UP_FROM": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OF_BAGS": {
+					"type": "number",
+					"x-example": ""
+				},
+				"WEIGHT": {
+					"type": "number",
+					"x-example": ""
+				},
+				"REMARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SIGNATURE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"IC": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSORDERNO_SONO": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_DO_PAGE",
+			"description": "Operations about TBLEDI_MELS_TALLY_DO_PAGE"
+		}
+	]
+}
