@@ -1,0 +1,126 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "TeckWah Update REST",
+		"description": "twlsg.vinfiniti.biz:8210",
+		"version": "0.1"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_DO_PAGE": {
+			"post": {
+				"tags": [
+					"CognitiveServices"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/TALLY_DELIVERYORDER_PAGE"
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"TALLY_DELIVERYORDER_PAGE": {
+			"type": "object",
+			"properties": {
+				"ORDER_DATE": {
+					"type": "date",
+					"x-example": ""
+				},
+				"SO_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DO_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOTNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DELIVERY_TO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PICK_UP_FROM": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OF_BAGS": {
+					"type": "number",
+					"x-example": ""
+				},
+				"WEIGHT": {
+					"type": "number",
+					"x-example": ""
+				},
+				"REMARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SIGNATURE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"IC": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSORDERNO_SONO": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_DO_PAGE",
+			"description": "Operations about updating values using TBLEDI_MELS_TALLY_DO_PAGE"
+		}
+	]
+}
