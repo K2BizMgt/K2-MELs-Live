@@ -1,0 +1,325 @@
+
+  {
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_SHIPRELEASE": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_SHIPRELEASE"
+				],
+				"description": "Read ShipRelease EVLS",
+				"operationId": "Read_ShipRelease_EVLS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+					    "name": "CUSTCONTAINER",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CUSTCONTAINER"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/ShipReleaseWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER": null,
+							"AUT_4_ANGLES_PALLET": null,
+							"AUT_GRADE": null,
+							"AUT_LOT_NO": null,
+							"AUT_REMARK": null,
+							"AUT_SHIPPING_MARKS": null,
+							"CARGO_LOCATION": null,
+							"CARGO_TYPE": null,
+							"COSIGNEE": null,
+							"CUSTORDERNO": null,
+							"DATE_OF_RELEASE": null,
+							"GRADE": null,
+							"LOT_NO": null,
+							"NAME": null,
+							"NO_OF_BAGS": null,
+							"NO_OF_PKGS": null,
+							"ORDERDATE": null,
+							"REF_NO": null,
+							"S_NO": null,
+							"SIGNDATE": null,
+							"SIGNTIME": null,
+							"TRANSPORTER": null,
+							"TRUCK_NO": null,
+							"WEIGHT": null,
+						
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"ShipReleaseWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ShipRelease"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CUSTCONTAINER": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ShipRelease": {
+			"description": "Model for ShipRelease",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_4_ANGLES_PALLET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_LOT_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_REMARK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_SHIPPING_MARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_LOCATION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COSIGNEE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DATE_OF_RELEASE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OF_PKGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OF_BAGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDERDATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REF_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"S_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SIGNDATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SIGNTIME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TRANSPORTER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TRUCK_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"WEIGHT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_4_ANGLES_PALLET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_LOT_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_REMARK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"AUT_SHIPPING_MARKS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_LOCATION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COSIGNEE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DATE_OF_RELEASE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRADE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OF_BAGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OF_PKGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDERDATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REF_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"S_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SIGNDATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SIGNTIME": {
+					"type": "string",
+					"x-example": ""
+					
+				},
+				"TRANSPORTER": {
+					"type": "string",
+					"x-example": ""
+					
+				},
+				"TRUCK_NO": {
+					"type": "string",
+					"x-example": ""
+					
+				},
+				"WEIGHT": {
+					"type": "string",
+					"x-example": ""
+					
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_SHIPRELEASE",
+			"description": "Operations about TBLEDI_MELS_TALLY_SHIPRELEASE"
+		}
+	]
+}
