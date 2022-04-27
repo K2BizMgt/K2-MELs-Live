@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@K2BizMgt 
+K2BizMgt
+/
+K2-MELs-Live
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+K2-MELs-Live/TBLEDI_MELS_TALLY_SHIPRELEASE_Read_Live.json
+@K2BizMgt
+K2BizMgt Add files via upload
+Latest commit 143ca0f 10 minutes ago
+ History
+ 1 contributor
+348 lines (341 sloc)  6.71 KB
+   
 {
 	"swagger": "2.0",
 	"info": {
@@ -69,29 +98,6 @@
 							"TRANSPORTER": null,
 							"TRUCK_NO": null,
 							"WEIGHT": null,
-							"AUT_4_ANGLES_PALLET": null,
-							"AUT_GRADE": null,
-							"AUT_LOT_NO": null,
-							"AUT_REMARK": null,
-							"AUT_SHIPPING_MARKS": null,
-							"CARGO_LOCATION": null,
-							"CARGO_TYPE": null,
-							"COSIGNEE": null,
-							"WEIGHT": null,
-							"CUSTORDERNO": null,
-							"DATE_OF_RELEASE": null,
-							"GRADE": null,
-							"LOT_NO": null,
-							"NAME": null,
-							"NO_OF_BAGS": null,
-							"NO_OF_PKGS": null,
-							"ORDERDATE": null,
-							"REF_NO": null,
-							"S_NO": null,
-							"SIGNDATE": null,
-							"SIGNTIME": null,
-							"TRANSPORTER": null,
-							"TRUCK_NO": null
 						
 						}
 					}
