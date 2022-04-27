@@ -86,8 +86,8 @@
 				}
 			}
 		},
-		"CustOrderNo_SoNo": {
-			"description": "Model for CustOrderNo_SoNo",
+		"CUSORDERNO_SONO": {
+			"description": "Model for CUSORDERNO_SONO",
 			"required": [
 				"CUSORDERNO_SONO"
 			],
