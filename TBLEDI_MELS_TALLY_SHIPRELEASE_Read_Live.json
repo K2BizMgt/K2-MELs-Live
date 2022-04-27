@@ -1,32 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@K2BizMgt 
-K2BizMgt
-/
-K2-MELs-Live
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-K2-MELs-Live/TBLEDI_MELS_TALLY_SHIPRELEASE_Read_Live.json
-@K2BizMgt
-K2BizMgt Add files via upload
-Latest commit 143ca0f 10 minutes ago
- History
- 1 contributor
-348 lines (341 sloc)  6.71 KB
-   
 {
 	"swagger": "2.0",
 	"info": {
