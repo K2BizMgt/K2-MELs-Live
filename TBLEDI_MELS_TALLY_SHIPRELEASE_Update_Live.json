@@ -56,7 +56,7 @@
 					"x-example": ""
 				},
 				"DATE_OF_RELEASE": {
-					"type": "string",
+					"type": "date",
 					"x-example": ""
 				},
 				"CUSTORDERNO": {
@@ -104,11 +104,11 @@
 					"x-example": ""
 				},
 				"SIGNDATE": {
-					"type": "string",
+					"type": "date",
 					"x-example": ""
 				},
 				"SIGNTIME": {
-					"type": "string",
+					"type": "date",
 					"x-example": ""
 				},
 				"COSIGNEE": {
