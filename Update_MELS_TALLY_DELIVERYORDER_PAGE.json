@@ -43,6 +43,10 @@
 		"TALLY_DELIVERYORDER_PAGE": {
 			"type": "object",
 			"properties": {
+				"CUSTORDERNO_SONO_GRADE_LOT": {
+					"type": "string",
+					"x-example": ""
+				},
 				"ORDER_DATE": {
 					"type": "date",
 					"x-example": ""
@@ -102,11 +106,8 @@
 				"IC": {
 					"type": "string",
 					"x-example": ""
-				},
-				"CUSORDERNO_SONO": {
-					"type": "string",
-					"x-example": ""
 				}
+				
 			}
 		}
 	},
