@@ -26,12 +26,12 @@
 				],
 				"parameters": [
 					{
-						"name": "CUSORDERNO_SONO",
+						"name": "CUSTORDERNO_SONO_GRADE_LOT",
 						"in": "body",
-						"description": "CUSORDERNO_SONO",
+						"description": "CUSTORDERNO_SONO_GRADE_LOT",
 						"required": true,
 						"schema": {
-							"$ref": "#/definitions/CUSORDERNO_SONO"
+							"$ref": "#/definitions/CUSTORDERNO_SONO_GRADE_LOT"
 						}
 					}
 				],
@@ -39,11 +39,12 @@
 					"200": {
 						"description": "OK",
 						"schema": {
-							"$ref": "#/definitions/CustOrderNo_SoNoWrapper"
+							"$ref": "#/definitions/CustOrderNo_SoNo_Grade_LotWrapper"
 						}
 					},
 					"examples": {
 						"application/json": {
+							"CUSTORDERNO_SONO_GRADE_LOT": null,
 							"ORDER_DATE": null,
 							"SO_NO": null,
 							"CUSTORDERNO": null,
@@ -58,8 +59,8 @@
 							"REMARKS": null,
 							"SIGNATURE": null,
 							"NAME": null,
-							"IC": null,
-							"CUSORDERNO_SONO": null
+							"IC": null
+							
 						}
 					}
 				}
@@ -72,7 +73,7 @@
 		}
 	},
 	"definitions": {
-		"CustOrderNo_SoNoWrapper": {
+		"CustOrderNo_SoNo_Grade_LotWrapper": {
 			"type": "object",
 			"properties": {
 				"data": {
@@ -86,13 +87,13 @@
 				}
 			}
 		},
-		"CUSORDERNO_SONO": {
-			"description": "Model for CUSORDERNO_SONO",
+		"CUSTORDERNO_SONO_GRADE_LOT": {
+			"description": "Model for CUSTORDERNO_SONO_GRADE_LOT",
 			"required": [
-				"CUSORDERNO_SONO"
+				"CUSTORDERNO_SONO_GRADE_LOT"
 			],
 			"properties": {
-				"CUSORDERNO_SONO": {
+				"CUSTORDERNO_SONO_GRADE_LOT": {
 					"type": "string",
 					"x-example": "Cargo-T1-1"
 				}
@@ -101,9 +102,13 @@
 		"ReadTallyDeliveryOrderPage": {
 			"description": "Model for ReadTallyDeliveryOrderPage",
 			"required": [
-				"CUSORDERNO_SONO"
+				"CUSTORDERNO_SONO_GRADE_LOT"
 			],
 			"properties": {
+				"CUSTORDERNO_SONO_GRADE_LOT": {
+					"type": "string",
+					"x-example": ""
+				},
 				"ORDER_DATE": {
 					"type": "date",
 					"x-example": ""
@@ -163,11 +168,8 @@
 				"IC": {
 					"type": "string",
 					"x-example": ""
-				},
-				"CUSORDERNO_SONO": {
-					"type": "string",
-					"x-example": ""
 				}
+				
 			}
 		}
 	},
