@@ -1,49 +1,118 @@
 {
 	"swagger": "2.0",
 	"info": {
-		"title": "TeckWah Update REST",
-		"description": "twlsg.vinfiniti.biz:8210",
-		"version": "0.1"
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
 	},
 	"host": "twlsg.vinfiniti.biz:8210",
-	"basePath": "/Vin3RService/rest/commonEdi",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
 	"schemes": [
 		"https"
 	],
 	"paths": {
-		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_SHIPRELEASE": {
+		"/TBLEDI_MELS_TALLY_SHIPRELEASE": {
 			"post": {
 				"tags": [
-					"CognitiveServices"
+					"TBLEDI_MELS_TALLY_SHIPRELEASE"
+				],
+				"description": "Read TBLEDI_MELS_TALLY_SHIPRELEASE",
+				"operationId": "Read_TBLEDI_MELS_TALLY_SHIPRELEASE",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
 				],
 				"parameters": [
 					{
+						"name": "CustContainerNo",
 						"in": "body",
-						"name": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
 						"schema": {
-							"type": "array",
-							"items": {
-								"$ref": "#/definitions/ShipRelease_Details"
-							}
+							"$ref": "#/definitions/CustContainerNo"
 						}
 					}
 				],
 				"responses": {
 					"200": {
-						"description": "Success",
+						"description": "OK",
 						"schema": {
-							"type": "string"
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER_GRADE_LOT": null,
+							"ORDERDATE": null,
+							"TRANSPORTER": null,
+							"REF_NO": null,
+							"DATE_OF_RELEASE": null,
+							"CUSTORDERNO": null,
+							"CARGO_LOCATION": null,
+							"LOT_NO": null,
+							"CARGO_TYPE": null,
+							"GRADE": null,
+							"WEIGHT": null,
+							"NO_OF_BAGS": null,
+							"NO_OF_PKGS": null,
+							"LOOSE_PALLET": null,
+							"NAME": null,
+							"SIGNDATE": null,
+							"SIGNTIME": null,
+							"COSIGNEE": null,
+							"S_NO": null,
+							"TRUCK_NO": null,
+							"AUT_SHIPPING_MARKS": null,
+							"AUT_4_ANGLES_PALLET": null,
+							"AUT_GRADE": null,
+							"AUT_LOT_NO": null,
+							"AUT_REMARK": null
+						
+							
 						}
 					}
 				}
-			}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
 		}
 	},
 	"definitions": {
-		"ShipRelease_Details": {
+		"CustContainerNoWrapper": {
 			"type": "object",
 			"properties": {
-				"ORDERDATE": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallyShipReleasePage"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadTallyShipReleasePage": {
+			"description": "Model for ReadTallyShipReleasePage",
+			"required": [
+					"ORDERDATE": {
 					"type": "DATE",
 					"x-example": ""
 				},
@@ -141,8 +210,9 @@
 				},
 				"AUT_REMARK": {
 					"type": "string",
-					"x-example": ""			
+					"x-example": ""		
 				}
+				
 			}
 		}
 	},
@@ -156,7 +226,7 @@
 	"tags": [
 		{
 			"name": "TBLEDI_MELS_TALLY_SHIPRELEASE",
-			"description": "Operations about updating values using TBLEDI_MELS_TALLY_SHIPRELEASE"
+			"description": "Operations about TBLEDI_MELS_TALLY_SHIPRELEASE"
 		}
 	]
 }
