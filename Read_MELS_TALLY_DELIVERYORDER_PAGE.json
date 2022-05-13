@@ -26,12 +26,12 @@
 				],
 				"parameters": [
 					{
-						"name": "CUSTORDERNO_SONO_GRADE_LOT",
+						"name": "CustContainerNo",
 						"in": "body",
-						"description": "CUSTORDERNO_SONO_GRADE_LOT",
+						"description": "Cust_ContainerNo",
 						"required": true,
 						"schema": {
-							"$ref": "#/definitions/CUSTORDERNO_SONO_GRADE_LOT"
+							"$ref": "#/definitions/CustContainerNo"
 						}
 					}
 				],
@@ -39,7 +39,7 @@
 					"200": {
 						"description": "OK",
 						"schema": {
-							"$ref": "#/definitions/CustOrderNo_SoNo_Grade_LotWrapper"
+							"$ref": "#/definitions/CustContainerNoWrapper"
 						}
 					},
 					"examples": {
@@ -73,7 +73,7 @@
 		}
 	},
 	"definitions": {
-		"CustOrderNo_SoNo_Grade_LotWrapper": {
+		"CustContainerNoWrapper": {
 			"type": "object",
 			"properties": {
 				"data": {
@@ -87,13 +87,13 @@
 				}
 			}
 		},
-		"CUSTORDERNO_SONO_GRADE_LOT": {
-			"description": "Model for CUSTORDERNO_SONO_GRADE_LOT",
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
 			"required": [
-				"CUSTORDERNO_SONO_GRADE_LOT"
+				"CUSTCONTAINER"
 			],
 			"properties": {
-				"CUSTORDERNO_SONO_GRADE_LOT": {
+				"CUSTCONTAINER": {
 					"type": "string",
 					"x-example": "Cargo-T1-1"
 				}
@@ -102,7 +102,7 @@
 		"ReadTallyDeliveryOrderPage": {
 			"description": "Model for ReadTallyDeliveryOrderPage",
 			"required": [
-				"CUSTORDERNO_SONO_GRADE_LOT"
+				"CUSTCONTAINER"
 			],
 			"properties": {
 				"CUSTORDERNO_SONO_GRADE_LOT": {
