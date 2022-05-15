@@ -1,0 +1,594 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_CONTAINER": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_CONTAINER"
+				],
+				"description": "Read Container",
+				"operationId": "Read_Container",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"VIN_CUSTSYSNO": null,
+							"VIN_TYPE_OF_JOB": null,
+							"VIN_CARRIER": null,
+							"VIN_HAULIER": null,
+							"VIN_TYPE_OF_CONTAINER": null,
+							"LOADING_PLACE": null,
+							"SBU_LOCATION": null,
+							"FINAL_DISPOSITION": null,
+							"CONTAINER_NO": null,
+							"SEAL_SECURITY": null,
+							"SEAL_AFFIXED": null,
+							"SEAL_NO": null,
+							"INSPECTOR_NAME": null,
+							"INSPECTOR_DATE": null,
+							"REVIEWER_NAME": null,
+							"REVIEWER_DATE": null,
+							"SUPPORT_BEAMS_OUTSIDE_CHECK": null,
+							"SUPPORT_BEAMS_OUTSIDE_PROBLEMS": null,
+							"SECURE_DOORS_CHECK": null,
+							"SECURE_DOORS_PROBLEMS": null,
+							"UNUSUAL_REPAIRS_RIGHT_CHECK": null,
+							"UNUSUAL_REPAIRS_RIGHT_PROBLEMS": null,
+							"UNUSUAL_REPAIRS_LEFT_CHECK": null,
+							"UNUSUAL_REPAIRS_LEFT_PROBLEMS": null,
+							"BLOCK_VENTS_FRONT_CHECK": null,
+							"BLOCK_VENTS_FRONT_PROBLEMS": null,
+							"BLOCK_VENTS_CEILING_CHECK": null,
+							"BLOCK_VENTS_CEILING_PROBLEMS": null,
+							"FLOOR_FLAT_CHECK": null,
+							"FLOOR_FLAT_PROBLEMS": null,
+							"NO_ODOUR_OTHERS_CHECK": null,
+							"NO_ODOUR_OTHERS_PROBLEMS": null,
+							"CUSTCONTAINER": null,
+							"TYPE_OF_CONTAINER_MEMO": null,
+							"LOADING_PLACE_MEMO": null,
+							"K2_CONTAINERNO": null,
+							"K2_SEALNO": null,
+							"SEAL_HIGH_REASONS": null,
+							"SEAL_HIGH_MEMO": null,
+							"ADMIN_RE_CHECK_MEMO": null,
+							"ETA_SG": null,
+							"TRUCK_IN_DATE": null,
+							"K2_STATUS": null,
+							"CONTAINER_NO_OUTSIDE_CHECK": null,
+							"COLOR_DOORS_CHECK": null,
+							"LOOSE_BOLT_DOORS_CHECK": null,
+							"PLATES_DOORS_CHECK": null,
+							"DOORS_CLOSE_GAP_CHECK": null,
+							"REPAIRS_WALLS_RIGHT_CHECK": null,
+							"TOOL_TAP_RIGHT_CHECK": null,
+							"NO_HOLES_RIGHT_CHECK": null,
+							"NO_OIL_RIGHT_CHECK": null,
+							"REPARIS_WALLS_LEFT_CHECK": null,
+							"TOOL_TAP_LEFT_CHECK": null,
+							"NO_HOLES_LEFT_CHECK": null,
+							"NO_OIL_LEFT_CHECK": null,
+							"TOOL_TAP_FRONT_CHECK": null,
+							"NO_HOLES_FRONT_CHECK": null,
+							"NO_OIL_FRONT_CHECK": null,
+							"UNCOMFORTABLE_CEILING_CHECK": null,
+							"REPAIRS_CEILING_CHECK": null,
+							"TOOL_TAP_CEILING_CHECK": null,
+							"NO_HOLES_CEILING_CHECK": null,
+							"NO_OIL_CEILING_CHECK": null,
+							"FLOOR_HEIGHT_CHECK": null,
+							"UNUSUAL_FLOOR_CHECK": null,
+							"NO_HOLES_FLOOR_CHECK": null,
+							"NO_OIL_FLOOR_CHECK": null,
+							"HIDDEN_OTHERS_CHECK": null,
+							"CONTAINER_NO_OUTSIDE_PROBLEMS": null,
+							"COLOR_DOORS_PROBLEMS": null,
+							"LOOSE_BOLT_DOORS_PROBLEMS": null,
+							"PLATES_DOORS_PROBLEMS": null,
+							"DOORS_CLOSE_GAP_PROBLEMS": null,
+							"REPAIRS_WALLS_RIGHT_PROBLEMS": null,
+							"TOOL_TAP_RIGHT_PROBLEMS": null,
+							"NO_HOLES_RIGHT_PROBLEMS": null,
+							"NO_OIL_RIGHT_PROBLEMS": null,
+							"REPARIS_WALLS_LEFT_PROBLEMS": null,
+							"TOOL_TAP_LEFT_PROBLEMS": null,
+							"NO_HOLES_LEFT_PROBLEMS": null,
+							"NO_OIL_LEFT_PROBLEMS": null,
+							"TOOL_TAP_FRONT_PROBLEMS": null,
+							"NO_HOLES_FRONT_PROBLEMS": null,
+							"NO_OIL_FRONT_PROBLEMS": null,
+							"UNCOMFORTABLE_CEILING_PROBLEMS": null,
+							"REPAIRS_CEILING_PROBLEMS": null,
+							"TOOL_TAP_CEILING_PROBLEMS": null,
+							"NO_HOLES_CEILING_PROBLEMS": null,
+							"NO_OIL_CEILING_PROBLEMS": null,
+							"FLOOR_HEIGHT_PROBLEMS": null,
+							"UNUSUAL_FLOOR_PROBLEMS": null,
+							"NO_HOLES_FLOOR_PROBLEMS": null,
+							"NO_OIL_FLOOR_PROBLEMS" : null,
+							"HIDDEN_OTHERS_PROBLEMS" : null,
+							"VIN_PACKINGSTATUS" : null,
+							"STUFFING_PLAN" : null
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadContainer"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadContainer": {
+			"description": "Model for ReadContainer",
+			"required": [
+				"VIN_CUSTSYSNO"
+			],
+			"properties": {
+				"VIN_CUSTSYSNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TYPE_OF_JOB": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_CARRIER": {
+					"type": "string",
+					"x-example": "1"
+				},
+				"VIN_HAULIER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_TYPE_OF_CONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOADING_PLACE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SBU_LOCATION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FINAL_DISPOSITION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_SECURITY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_AFFIXED": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"INSPECTOR_NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"INSPECTOR_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"REVIEWER_NAME": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REVIEWER_DATE": {
+					"type": "string",
+					"format": "date-time",
+					"x-example": "2020-04-14T10:47:24"
+				},
+				"SUPPORT_BEAMS_OUTSIDE_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SUPPORT_BEAMS_OUTSIDE_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SECURE_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SECURE_DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_REPAIRS_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_REPAIRS_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_REPAIRS_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_REPAIRS_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BLOCK_VENTS_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BLOCK_VENTS_FRONT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BLOCK_VENTS_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BLOCK_VENTS_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_FLAT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_FLAT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_ODOUR_OTHERS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_ODOUR_OTHERS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TYPE_OF_CONTAINER_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOADING_PLACE_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_CONTAINERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_SEALNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_HIGH_REASONS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SEAL_HIGH_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ADMIN_RE_CHECK_MEMO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ETA_SG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TRUCK_IN_DATE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO_OUTSIDE_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COLOR_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOOSE_BOLT_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PLATES_DOORS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DOORS_CLOSE_GAP_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_WALLS_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_RIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPARIS_WALLS_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_LEFT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FRONT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNCOMFORTABLE_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_CEILING_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_HEIGHT_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FLOOR_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"HIDDEN_OTHERS_CHECK": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINER_NO_OUTSIDE_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"COLOR_DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOOSE_BOLT_DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PLATES_DOORS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"DOORS_CLOSE_GAP_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_WALLS_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_RIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPARIS_WALLS_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_LEFT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_FRONT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FRONT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FRONT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNCOMFORTABLE_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REPAIRS_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOOL_TAP_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_CEILING_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"FLOOR_HEIGHT_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"UNUSUAL_FLOOR_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_HOLES_FLOOR_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_OIL_FLOOR_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"HIDDEN_OTHERS_PROBLEMS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_PACKINGSTATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"STUFFING_PLAN": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_CONTAINER",
+			"description": "Operations about TBLEDI_MELS_TALLY_CONTAINER"
+		}
+	]
+}
