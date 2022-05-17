@@ -45,6 +45,7 @@
 					"examples": {
 						"application/json": {
 							"CUSTCONTAINER_GRADE_LOT": null,
+							"CUSTCONTAINER": null,
 							"ORDERDATE": null,
 							"TRANSPORTER": null,
 							"REF_NO": null,
@@ -140,6 +141,10 @@
 					"type": "string",
 					"x-example": ""
 				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
 				"LOT_NO": {
 					"type": "string",
 					"x-example": ""
@@ -230,3 +235,4 @@
 		}
 	]
 }
+
