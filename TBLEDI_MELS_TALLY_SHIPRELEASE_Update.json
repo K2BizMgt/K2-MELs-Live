@@ -47,6 +47,10 @@
 					"type": "DATE",
 					"x-example": ""
 				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
 				"TRANSPORTER": {
 					"type": "string",
 					"x-example": ""
