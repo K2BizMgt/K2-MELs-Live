@@ -113,6 +113,9 @@
 		"ReadTallyShipReleasePage": {
 			"description": "Model for ReadTallyShipReleasePage",
 			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
 					"ORDERDATE": {
 					"type": "DATE",
 					"x-example": ""
