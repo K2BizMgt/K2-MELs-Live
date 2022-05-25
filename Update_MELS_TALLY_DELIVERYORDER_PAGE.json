@@ -48,7 +48,7 @@
 					"x-example": ""
 				},
 				"ORDER_DATE": {
-					"type": "date",
+					"type": "string",
 					"x-example": ""
 				},
 				"SO_NO": {
