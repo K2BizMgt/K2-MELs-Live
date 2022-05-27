@@ -117,7 +117,7 @@
 			],
 			"properties": {
 					"ORDERDATE": {
-					"type": "DATE",
+					"type": "date",
 					"x-example": ""
 				},
 				"TRANSPORTER": {
