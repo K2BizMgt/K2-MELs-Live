@@ -481,6 +481,10 @@
 				"SHR_CARDBOARD_PLYWOOD_CHECKBOX": {
 					"type": "string",
 					"x-example": ""
+				},
+				"VIN_REFERENCEO": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
