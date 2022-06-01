@@ -153,6 +153,7 @@
 							"SHR_CARDBOARD_RUNNER_QTY": null,
 							"SHR_CARDBOARD_PLYWOOD_QTY": null,
 							"SHR_CARDBOARD_RUNNER_CHECKBOX": null,
+							"SHR_CARDBOARD_PLYWOOD_CHECKBOX": null,
 							"VIN_REFERENCEO": null
 						}
 					}
@@ -630,6 +631,10 @@
 					"x-example": ""
 				},
 				"SHR_CARDBOARD_RUNNER_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHR_CARDBOARD_PLYWOOD_CHECKBOX": {
 					"type": "string",
 					"x-example": ""
 				},
