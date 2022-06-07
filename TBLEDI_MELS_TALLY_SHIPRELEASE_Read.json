@@ -69,7 +69,10 @@
 							"AUT_4_ANGLES_PALLET": null,
 							"AUT_GRADE": null,
 							"AUT_LOT_NO": null,
-							"AUT_REMARK": null
+							"AUT_REMARK": null,
+							"OTHER_REMARKS": null,
+							"CHECK_BY": null
+						
 						
 							
 						}
@@ -217,6 +220,14 @@
 					"x-example": ""
 				},
 				"AUT_REMARK": {
+					"type": "string",
+					"x-example": ""		
+				},
+				"OTHER_REMARKS": {
+					"type": "string",
+					"x-example": ""		
+				},
+				"CHECK_BY": {
 					"type": "string",
 					"x-example": ""		
 				}
