@@ -146,6 +146,14 @@
 				"AUT_REMARK": {
 					"type": "string",
 					"x-example": ""					
+				},
+				"OTHER_REMARKS": {
+					"type": "string",
+					"x-example": ""					
+				},
+				"CHECK_BY": {
+					"type": "string",
+					"x-example": ""					
 				}
 			}
 		}
