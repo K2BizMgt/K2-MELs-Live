@@ -640,7 +640,7 @@
 				},
 				"VIN_REFERENCEO": {
 					"type": "string",
-					"x-example": ""
+					"x-example": "TECHNOLUBE"
 				}
 			}
 		}
