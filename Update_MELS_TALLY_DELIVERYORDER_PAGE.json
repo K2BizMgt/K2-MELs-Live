@@ -95,7 +95,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"SIGNATURE": {
+				"Authorised_personnel": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -103,7 +103,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"IC": {
+				"Vehicle_No": {
 					"type": "string",
 					"x-example": ""
 				}
