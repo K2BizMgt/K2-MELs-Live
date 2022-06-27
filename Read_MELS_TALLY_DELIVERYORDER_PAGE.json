@@ -57,9 +57,9 @@
 							"NO_OF_BAGS": null,
 							"WEIGHT": null,
 							"REMARKS": null,
-							"Authorised_personnel": null,
+							"AUTHORISED_PERSONNEL": null,
 							"NAME": null,
-							"Vehicle_No": null
+							"VEHICLE_NO": null
 							
 						}
 					}
@@ -157,7 +157,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"Authorised_personnel": {
+				"AUTHORISED_PERSONNEL": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -165,7 +165,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"Vehicle_No": {
+				"VEHICLE_NO": {
 					"type": "string",
 					"x-example": ""
 				}
