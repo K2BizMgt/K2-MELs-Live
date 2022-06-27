@@ -95,7 +95,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"Authorised_personnel": {
+				"AUTHORISED_PERSONNEL": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -103,7 +103,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"Vehicle_No": {
+				"VEHICLE_NO": {
 					"type": "string",
 					"x-example": ""
 				}
