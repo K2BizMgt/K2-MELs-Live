@@ -79,7 +79,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"CARGO_TYPE": {
+				"PRODUCTTYPE": {
 					"type": "string",
 					"x-example": ""
 				},
