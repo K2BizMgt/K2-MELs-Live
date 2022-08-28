@@ -53,7 +53,7 @@
 							"CUSTORDERNO": null,
 							"CARGO_LOCATION": null,
 							"LOT_NO": null,
-							"CARGO_TYPE": null,
+							"PRODUCTTYPE": null,
 							"GRADE": null,
 							"WEIGHT": null,
 							"NO_OF_BAGS": null,
@@ -155,7 +155,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"CARGO_TYPE": {
+				"PRODUCTTYPE": {
 					"type": "string",
 					"x-example": ""
 				},
