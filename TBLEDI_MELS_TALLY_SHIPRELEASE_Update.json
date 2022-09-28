@@ -123,7 +123,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"TRUCK_NO": {
+				"SHIPMENT_TYPE": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -152,6 +152,30 @@
 					"x-example": ""					
 				},
 				"CHECK_BY": {
+					"type": "string",
+					"x-example": ""					
+				},
+				"AOC_LABEL": {
+					"type": "string",
+					"x-example": ""					
+				},
+			          "RED_LABEL": {
+					"type": "string",
+					"x-example": ""					
+				},
+		                  "BLUE_LABEL": {
+					"type": "string",
+					"x-example": ""					
+				},
+	                         "AOC_LABEL_OPS": {
+					"type": "string",
+					"x-example": ""					
+				},
+                                 "RED_LABEL_OPS": {
+					"type": "string",
+					"x-example": ""					
+				},
+                                  "BLUE_LABEL_OPS": {
 					"type": "string",
 					"x-example": ""					
 				}
