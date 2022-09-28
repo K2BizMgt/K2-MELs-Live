@@ -64,14 +64,23 @@
 							"SIGNTIME": null,
 							"COSIGNEE": null,
 							"S_NO": null,
-							"TRUCK_NO": null,
+							"SHIPMENT_TYPE": null,
 							"AUT_SHIPPING_MARKS": null,
 							"AUT_4_ANGLES_PALLET": null,
 							"AUT_GRADE": null,
 							"AUT_LOT_NO": null,
 							"AUT_REMARK": null,
 							"OTHER_REMARKS": null,
-							"CHECK_BY": null
+							"CHECK_BY": null,
+							"AOC_LABEL": null, 
+							"BLUE_LABEL": null, 
+							"BLUE_LABEL": null, 
+							"AOC_LABEL_OPS": null, 
+							"RED_LABEL_OPS": null, 
+							"BLUE_LABEL_OPS": null
+							
+							
+							
 						
 						
 							
@@ -199,7 +208,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"TRUCK_NO": {
+				"SHIPMENT_TYPE": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -228,6 +237,30 @@
 					"x-example": ""		
 				},
 				"CHECK_BY": {
+					"type": "string",
+					"x-example": ""		
+				},
+				"AOC_LABEL": {
+					"type": "string",
+					"x-example": ""		
+				},
+			        "RED_LABEL": {
+					"type": "string",
+					"x-example": ""		
+				},
+		               "BLUE_LABEL": {
+					"type": "string",
+					"x-example": ""		
+				},
+                          	"AOC_LABEL_OPS": {
+					"type": "string",
+					"x-example": ""		
+				},
+                               "RED_LABEL_OPS": {
+					"type": "string",
+					"x-example": ""		
+				},
+                                "BLUE_LABEL_OPS": {
 					"type": "string",
 					"x-example": ""		
 				}
