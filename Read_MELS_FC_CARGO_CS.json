@@ -1,0 +1,225 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_FC_CARGO_CS": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_FC_CARGO_CS"
+				],
+				"description": "Read TBLEDI_MELS_FC_CARGO_CS",
+				"operationId": "Read_TBLEDI_MELS_FC_CARGO_CS",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER": null,
+							"CHECKING_DATES": null,
+							"GRADES": null,
+							"LOT_NO": null,
+							"TOTAL_QTY_CHECKED": null,
+							"ORDER_NO": null,
+							"PURPOSE": null,
+							"CARGO_TYPE": null,
+							"PACKING_TYPE": null,
+							"BAGS_ARE_FREE_FROM_STAINS": null,
+							"BAGS_DO_NOT_HAVE_ANY_TAPES": null,
+							"NO_DAMAGE_BAGS_OR_SPILLAGE": null,
+							"BAGS_ARE_NOT_YELLOW_IN_COLOR": null,
+							"PRINTING_OF_PRODUCT_LOT": null,
+							"NO_PALLETS_DAMAGED_DEFECTS": null,
+							"REASONS_FOR_NO": null,
+							"REASONS_FOR_DEFECTS": null,
+							"CHECK_BY":null,
+							"HANDOVER_TO":null,
+							"NAME_AND_SIGNATURE_CHECK_BY":null,
+							"NAME_AND_SIGNATURE_HANDOVER_TO":null,
+							"SHIPMENTMETHOD":null,
+							"LINESTATUS":null
+						
+							
+							
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/Read_MELS_FC_CARGO_CS"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"Read_MELS_FC_CARGO_CS": {
+			"description": "Model for Read_MELS_FC_CARGO_CS",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CHECKING_DATES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRADES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_CHECKED": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDER_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PURPOSE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BAGS_ARE_FREE_FROM_STAINS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BAGS_DO_NOT_HAVE_ANY_TAPES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_DAMAGE_BAGS_OR_SPILLAGE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BAGS_ARE_NOT_YELLOW_IN_COLOR": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRINTING_OF_PRODUCT_LOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_PALLETS_DAMAGED_DEFECTS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REASONS_FOR_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REASONS_FOR_DEFECTS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"HANDOVER_TO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NAME_AND_SIGNATURE_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NAME_AND_SIGNATURE_HANDOVER_TO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHIPMENTMETHOD": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LINESTATUS": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_FC_CARGO_CS",
+			"description": "Operations about TBLEDI_MELS_FC_CARGO_CS"
+		}
+	]
+}
