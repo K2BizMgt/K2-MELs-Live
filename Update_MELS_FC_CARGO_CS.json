@@ -1,0 +1,158 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "TeckWah Update REST",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.1"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_FC_CARGO_CS": {
+			"post": {
+				"tags": [
+					"CognitiveServices"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/MELS_FC_CARGO_CS"
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"MELS_FC_CARGO_CS": {
+			"type": "object",
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "integer",
+					"x-example": ""
+				},
+				"CHECKING_DATES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"GRADES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"TOTAL_QTY_CHECKED": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDER_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PURPOSE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CARGO_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PACKING_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BAGS_ARE_FREE_FROM_STAINS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BAGS_DO_NOT_HAVE_ANY_TAPES": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_DAMAGE_BAGS_OR_SPILLAGE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"BAGS_ARE_NOT_YELLOW_IN_COLOR": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRINTING_OF_PRODUCT_LOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NO_PALLETS_DAMAGED_DEFECTS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REASONS_FOR_NO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"REASONS_FOR_DEFECTS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"HANDOVER_TO": {
+					"type": "string",
+					"x-example": ""
+				
+				},
+				"NAME_AND_SIGNATURE_CHECK_BY": {
+					"type": "string",
+					"x-example": ""
+				
+				},
+				"NAME_AND_SIGNATURE_HANDOVER_TO": {
+					"type": "string",
+					"x-example": ""
+				
+				},
+				"SHIPMENTMETHOD": {
+					"type": "string",
+					"x-example": ""
+				
+				},
+				"LINESTATUS": {
+					"type": "string",
+					"x-example": ""
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_FC_CARGO_CS",
+			"description": "Operations about updating values using TBLEDI_MELS_FC_CARGO_CS"
+		}
+	]
+}
