@@ -106,10 +106,7 @@
 				"EDI_STATUS": {
 					"type": "string",
 					"x-example": ""
-				},
-				"SPEICIALINSTRUCTION": {
-					"type": "string",
-					"x-example": ""
+		         
 				}
 			}
 		}
