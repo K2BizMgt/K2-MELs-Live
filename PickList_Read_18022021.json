@@ -63,7 +63,7 @@
 							"VIN_GRADES": null,
 							"CUSTCONTAINERPOS":null,
 							"EDI_STATUS":null,
-							"SPEICIALINSTRUCTION":null
+						
 							
 							
 						}
@@ -183,10 +183,6 @@
 					"x-example": ""
 				},
 				"EDI_STATUS": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SPEICIALINSTRUCTION": {
 					"type": "string",
 					"x-example": ""
 				}
