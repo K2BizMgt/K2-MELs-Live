@@ -110,8 +110,8 @@
 				}
 			}
 		},
-		"Read_MELS_FC_CARGO_CS": {
-			"description": "Model for Read_MELS_FC_CARGO_CS",
+		"ReadMELSFCCARGOCS": {
+			"description": "Model for ReadMELSFCCARGOCS",
 			"required": [
 				"CUSTCONTAINER"
 			],
