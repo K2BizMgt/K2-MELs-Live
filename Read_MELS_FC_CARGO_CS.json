@@ -44,7 +44,10 @@
 					},
 					"examples": {
 						"application/json": {
+							"CUSTCONTAINER_ITEMLOT": null,
 							"CUSTCONTAINER": null,
+							"PRODUCTTYPE": null,
+							"SHIPMENTMETHOD": null,
 							"CHECKING_DATES": null,
 							"GRADES": null,
 							"LOT_NO": null,
@@ -58,14 +61,13 @@
 							"NO_DAMAGE_BAGS_OR_SPILLAGE": null,
 							"BAGS_ARE_NOT_YELLOW_IN_COLOR": null,
 							"PRINTING_OF_PRODUCT_LOT": null,
-							"NO_PALLETS_DAMAGED_DEFECTS": null,
-							"REASONS_FOR_NO": null,
-							"REASONS_FOR_DEFECTS": null,
+							"NO_PALLETS_DAMAGED_DEFECTS":null,
+							"REASONS_FOR_NO":null,
+							"REASONS_FOR_DEFECTS":null,
 							"CHECK_BY":null,
 							"HANDOVER_TO":null,
 							"NAME_AND_SIGNATURE_CHECK_BY":null,
 							"NAME_AND_SIGNATURE_HANDOVER_TO":null,
-							"SHIPMENTMETHOD":null,
 							"LINESTATUS":null
 						
 							
@@ -114,7 +116,15 @@
 				"CUSTCONTAINER"
 			],
 			"properties": {
-				"CUSTCONTAINER": {
+				"CUSTCONTAINER_ITEMLOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCTTYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHIPMENTMETHOD": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -197,14 +207,10 @@
 				"NAME_AND_SIGNATURE_HANDOVER_TO": {
 					"type": "string",
 					"x-example": ""
-				},
-				"SHIPMENTMETHOD": {
-					"type": "string",
-					"x-example": ""
-				},
+			    },
 				"LINESTATUS": {
 					"type": "string",
-					"x-example": ""
+					"x-example": ""	
 				}
 			}
 		}
