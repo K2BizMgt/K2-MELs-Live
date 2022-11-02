@@ -43,8 +43,20 @@
 		"MELS_FC_CARGO_CS": {
 			"type": "object",
 			"properties": {
-				"CUSTCONTAINER": {
+				"CUSTCONTAINER_ITEMLOT": {
 					"type": "integer",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCTTYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SHIPMENTMETHOD": {
+					"type": "string",
 					"x-example": ""
 				},
 				"CHECKING_DATES": {
@@ -106,14 +118,17 @@
 				"REASONS_FOR_NO": {
 					"type": "string",
 					"x-example": ""
+				
 				},
 				"REASONS_FOR_DEFECTS": {
 					"type": "string",
 					"x-example": ""
+				
 				},
 				"CHECK_BY": {
 					"type": "string",
 					"x-example": ""
+				
 				},
 				"HANDOVER_TO": {
 					"type": "string",
@@ -123,17 +138,10 @@
 				"NAME_AND_SIGNATURE_CHECK_BY": {
 					"type": "string",
 					"x-example": ""
-				
 				},
 				"NAME_AND_SIGNATURE_HANDOVER_TO": {
 					"type": "string",
 					"x-example": ""
-				
-				},
-				"SHIPMENTMETHOD": {
-					"type": "string",
-					"x-example": ""
-				
 				},
 				"LINESTATUS": {
 					"type": "string",
