@@ -90,7 +90,7 @@
 				"data": {
 					"type": "array",
 					"items": {
-						"$ref": "#/definitions/Read_MELS_FC_CARGO_CS"
+						"$ref": "#/definitions/ReadMELSFCCARGOCS"
 					}
 				},
 				"count": {
