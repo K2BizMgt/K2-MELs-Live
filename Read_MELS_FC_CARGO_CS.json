@@ -52,7 +52,7 @@
 							"GRADES": null,
 							"LOT_NO": null,
 							"TOTAL_QTY_CHECKED": null,
-							"ORDER_NO": null,
+							"CUSTORDERNO": null,
 							"PURPOSE": null,
 							"CARGO_TYPE": null,
 							"PACKING_TYPE": null,
@@ -66,7 +66,7 @@
 							"REASONS_FOR_DEFECTS":null,
 							"CHECK_BY":null,
 							"HANDOVER_TO":null,
-							"NAME_AND_SIGNATURE_CHECK_BY":null,
+							"NO_FOREIGN_OBJECT":null,
 							"NAME_AND_SIGNATURE_HANDOVER_TO":null,
 							"LINESTATUS":null
 						
@@ -148,7 +148,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"ORDER_NO": {
+				"CUSTORDERNO": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -204,7 +204,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"NAME_AND_SIGNATURE_CHECK_BY": {
+				"NO_FOREIGN_OBJECT": {
 					"type": "string",
 					"x-example": ""
 				},
