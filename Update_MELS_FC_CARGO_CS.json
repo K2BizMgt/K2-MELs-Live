@@ -75,7 +75,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"ORDER_NO": {
+				"CUSTORDERNO": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -135,7 +135,7 @@
 					"x-example": ""
 				
 				},
-				"NAME_AND_SIGNATURE_CHECK_BY": {
+				"NO_FOREIGN_OBJECT": {
 					"type": "string",
 					"x-example": ""
 				},
