@@ -44,7 +44,7 @@
 			"type": "object",
 			"properties": {
 				"CUSTCONTAINER": {
-					"type": "integer",
+					"type": "string",
 					"x-example": ""
 				},
 				"SPECIAL_INSTRUCTION": {
