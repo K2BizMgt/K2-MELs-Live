@@ -1,0 +1,119 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_PILIST_SI": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_PILIST_SI"
+				],
+				"description": "Read TBLEDI_MELS_TALLY_PILIST_SI ",
+				"operationId": "Read_TBLEDI_MELS_TALLY_PILIST_SI",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "CustContainerNo",
+						"in": "body",
+						"description": "Cust_ContainerNo",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/CustContainerNo"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"CUSTCONTAINER": null,
+							"SPECIAL_INSTRUCTION": null
+										
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadPiListSI"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"CustContainerNo": {
+			"description": "Model for CustContainerNo",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadPiListSI": {
+			"description": "Model for ReadPiListSI",
+			"required": [
+				"CUSTCONTAINER"
+			],
+			"properties": {
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SPECIAL_INSTRUCTION": {
+					"type": "string",
+					"x-example": ""		
+	
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_PILIST_SI",
+			"description": "Operations about TBLEDI_MELS_TALLY_PILIST_SI"
+		}
+	]
+}
