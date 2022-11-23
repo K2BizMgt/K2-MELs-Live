@@ -63,11 +63,11 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"GRADES": {
+				"VIN_GRADES": {
 					"type": "string",
 					"x-example": ""
 				},
-				"LOT_NO": {
+				"VIN_LOTNO": {
 					"type": "string",
 					"x-example": ""
 				},
