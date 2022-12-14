@@ -485,6 +485,10 @@
 				"VIN_REFERENCEO": {
 					"type": "string",
 					"x-example": "TECHNOLUBE"
+				},
+				"SHIPPINGMARKCHECK": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
