@@ -154,7 +154,9 @@
 							"SHR_CARDBOARD_PLYWOOD_QTY": null,
 							"SHR_CARDBOARD_RUNNER_CHECKBOX": null,
 							"SHR_CARDBOARD_PLYWOOD_CHECKBOX": null,
-							"VIN_REFERENCEO": "TECHNOLUBE"
+							"VIN_REFERENCEO": "TECHNOLUBE", 
+							"SHIPPINGMARKCHECK": null
+						
 						}
 					}
 				}
@@ -640,7 +642,11 @@
 				},
 				"VIN_REFERENCEO": {
 					"type": "string",
-					"x-example": "TECHNOLUBE"
+					"x-example": "TECHNOLUBE" 
+				},
+				"SHIPPINGMARKCHECK": {
+					"type": "string",
+					"x-example": "string" 
 				}
 			}
 		}
