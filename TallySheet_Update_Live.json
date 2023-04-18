@@ -489,6 +489,10 @@
 				"SHIPPINGMARKCHECK": {
 					"type": "string",
 					"x-example": ""
+				},
+				"STUFFING_PLAN_TYPE": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
