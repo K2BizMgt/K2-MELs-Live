@@ -40,7 +40,7 @@
 		}
 	},
 	"definitions": {
-		"MELS_FC_CARGO_CS": {
+		"MELS_TALLY_6PLY_CBL": {
 			"type": "object",
 			"properties": {
 				"CUSTCONTAINER_ITEMLOT": {
