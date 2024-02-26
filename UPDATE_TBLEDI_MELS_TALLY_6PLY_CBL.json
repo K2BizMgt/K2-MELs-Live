@@ -23,7 +23,7 @@
 						"schema": {
 							"type": "array",
 							"items": {
-								"$ref": "#/definitions/MELS_TALLY_6PLY_CBL"
+								"$ref": "#/definitions/MELSTALLY6PLYCBL"
 							}
 						}
 					}
@@ -40,13 +40,9 @@
 		}
 	},
 	"definitions": {
-		"MELS_TALLY_6PLY_CBL": {
+		"MELSTALLY6PLYCBL": {
 			"type": "object",
 			"properties": {
-				"CUSTCONTAINER_ITEMLOT": {
-					"type": "string",
-					"x-example": ""
-				},
 				"CUSTCONTAINER": {
 					"type": "string",
 					"x-example": ""
