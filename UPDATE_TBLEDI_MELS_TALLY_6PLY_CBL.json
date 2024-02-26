@@ -1,0 +1,118 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "TeckWah Update REST",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.1"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_6PLY_CBL": {
+			"post": {
+				"tags": [
+					"CognitiveServices"
+				],
+				"parameters": [
+					{
+						"in": "body",
+						"name": "body",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/MELS_TALLY_6PLY_CBL"
+							}
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	},
+	"definitions": {
+		"MELS_FC_CARGO_CS": {
+			"type": "object",
+			"properties": {
+				"CUSTCONTAINER_ITEMLOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+					"PLY_1": {
+					"type": "string",
+					"x-example": ""	
+                    },
+				"PLY_2": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_3": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_4": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_5": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_6": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_7": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_8": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_9": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_10": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_11": {
+					"type": "string",
+					"x-example": ""	
+	            },
+				"PLY_12": {
+					"type": "string",
+					"x-example": ""	
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_6PLY_CBL",
+			"description": "Operations about updating values using TBLEDI_MELS_TALLY_6PLY_CBL"
+		}
+	]
+}
