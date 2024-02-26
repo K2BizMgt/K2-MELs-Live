@@ -110,7 +110,7 @@
 				"PLY_1": {
 					"type": "string",
 					"x-example": ""	
-                },
+                    },
 				"PLY_2": {
 					"type": "string",
 					"x-example": ""	
