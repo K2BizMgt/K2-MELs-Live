@@ -52,47 +52,47 @@
 					"x-example": ""	
                     },
 				"PLY_2": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_3": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_4": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_5": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_6": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_7": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_8": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_9": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_10": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_11": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 	            },
 				"PLY_12": {
-					"type": "string",
+					"type": "Boolean",
 					"x-example": ""	
 				}
 			}
