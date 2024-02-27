@@ -48,7 +48,7 @@
 					"x-example": ""
 				},
 					"PLY_1": {
-					"type": "Boolean",
+					"type": "string",
 					"x-example": ""	
                     },
 				"PLY_2": {
