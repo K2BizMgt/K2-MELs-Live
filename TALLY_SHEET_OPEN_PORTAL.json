@@ -186,10 +186,10 @@
 		"K2STATUS": {
 			"description": "Model for K2STATUS",
 			"required": [
-				"K2STATUS"
+				"K2_STATUS"
 			],
 			"properties": {
-				"K2STATUS": {
+				"K2_STATUS": {
 					"type": "string",
 					"x-example": "Cargo-T1-1"
 				}
