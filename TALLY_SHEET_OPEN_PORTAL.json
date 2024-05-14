@@ -26,7 +26,7 @@
 				],
 				"parameters": [
 					{
-						"name": "K2_STATUS",
+						"name": "K2STATUS",
 						"in": "body",
 						"description": "K2_STATUS",
 						"required": true,
