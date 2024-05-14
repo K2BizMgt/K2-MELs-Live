@@ -26,7 +26,7 @@
 				],
 				"parameters": [
 					{
-						"name": "K2_STATUS",
+						"name": "K2STATUS",
 						"in": "body",
 						"description": "K2_STATUS",
 						"required": true,
@@ -183,13 +183,13 @@
 				}
 			}
 		},
-		"K2_STATUS": {
-			"description": "Model for K2_STATUS",
+		"K2STATUS": {
+			"description": "Model for K2STATUS",
 			"required": [
-				"K2_STATUS"
+				"K2STATUS"
 			],
 			"properties": {
-				"K2_STATUS": {
+				"K2STATUS": {
 					"type": "string",
 					"x-example": "Cargo-T1-1"
 				}
