@@ -31,7 +31,7 @@
 						"description": "K2_STATUS",
 						"required": true,
 						"schema": {
-							"$ref": "#/definitions/K2_STATUS"
+							"$ref": "#/definitions/K2STATUS"
 						}
 					}
 				],
