@@ -497,6 +497,10 @@
 				"TOP_3PLY": {
 					"type": "string",
 					"x-example": ""
+				},
+				"TOP_3PLY_CHECKBOX": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
