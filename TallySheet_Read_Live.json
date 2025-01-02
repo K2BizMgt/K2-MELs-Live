@@ -155,7 +155,9 @@
 							"SHR_CARDBOARD_PLYWOOD_CHECKBOX": null,
 							"VIN_REFERENCEO": "TECHNOLUBE", 
 							"SHIPPINGMARKCHECK": null,
-							"STUFFING_PLAN_TYPE": null 
+							"STUFFING_PLAN_TYPE": null,
+							"TOP_3PLY": null 
+					
 						
 						}
 					}
@@ -649,6 +651,10 @@
 					"x-example": "" 
 				},
 				"STUFFING_PLAN_TYPE": {
+		            		"type": "string",
+				        "x-example": "" 
+				},
+					"TOP_3PLY": {
 		            		"type": "string",
 				        "x-example": "" 
 				}
