@@ -493,6 +493,10 @@
 				"STUFFING_PLAN_TYPE": {
 					"type": "string",
 					"x-example": ""
+				},
+				"TOP_3PLY": {
+					"type": "string",
+					"x-example": ""
 				}
 			}
 		}
