@@ -410,18 +410,18 @@
 				
 			}
 		}
-	},
-	"securityDefinitions": 
-		"Default": {
-			"description": "Default Authentication",
-			"type": "basic"
-		}
-	},
-	"security": [],
-	"tags": [
-		{
-			"name": "TBLEDI_MELS_CNRT_SEALNO",
-			"description": "Operations about TBLEDI_MELS_CNRT_SEALNO"
-		}
-	]
+},
+"securityDefinitions": {
+    "Default": {
+        "description": "Default Authentication",
+        "type": "basic"
+    }
+},
+"security": [],
+"tags": [
+    {
+        "name": "TBLEDI_MELS_CNRT_SEALNO",
+        "description": "Operations about TBLEDI_MELS_CNRT_SEALNO"
+    }
+]
 }
