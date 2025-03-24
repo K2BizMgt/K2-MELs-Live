@@ -241,26 +241,6 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"CONTAINER1": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER20": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER20": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER20": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER20": {
-					"type": "string",
-					"x-example": ""
-				},
 				"CONTAINER21": {
 					"type": "string",
 					"x-example": ""
