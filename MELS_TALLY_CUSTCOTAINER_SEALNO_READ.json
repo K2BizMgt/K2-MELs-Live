@@ -403,7 +403,7 @@
 					"format": "int32",
 					"x-example": "1"
 				},
-				"REMARKS"
+"REMARKS": {
 					"type": "string",
 					"x-example": ""
 				}
