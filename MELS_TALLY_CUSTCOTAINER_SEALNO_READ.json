@@ -411,7 +411,7 @@
 			}
 		}
 	},
-	"securityDefinitions": {
+	"securityDefinitions": 
 		"Default": {
 			"description": "Default Authentication",
 			"type": "basic"
