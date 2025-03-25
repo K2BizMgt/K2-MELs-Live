@@ -329,7 +329,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"SEALNO14": "string",
+				"SEALNO14": { "string",
 					"x-example": ""
 				},
 				"SEALNO15": {
@@ -395,18 +395,18 @@
 					"x-example": "LCL"
 				},
 				"SEALNO30": {
-					"type": "integer",
+						"type": "string",
 					"format": "int32",
 					"x-example": "1"
 				},
-"REMARKS": {
+				"REMARKS":{
 					"type": "string",
 					"x-example": ""
 				}
 				
 			}
 		}
-},
+	},
 "securityDefinitions": {
     "Default": {
         "description": "Default Authentication",
@@ -420,3 +420,4 @@
         "description": "Operations about TBLEDI_MELS_CNRT_SEALNO"
     }
 ]
+}
