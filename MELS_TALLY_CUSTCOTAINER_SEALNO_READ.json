@@ -1,412 +1,413 @@
 {
-	"swagger": "2.0",
-	"info": {
-		"title": "Vinfiniti",
-		"description": "API for twlsg.vinfiniti.biz:8210",
-		"version": "0.0.0"
-	},
-	"host": "twlsg.vinfiniti.biz:8210",
-	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
-	"schemes": [
-		"https"
-	],
-	"paths": {
-		"/TBLEDI_MELS_CNRT_SEALNO": {
-			"post": {
-				"tags": [
-					"TBLEDI_MELS_CNRT_SEALNO"
-				],
-				"description": "Read tally sheet",
-				"operationId": "Read_TallySheet",
-				"consumes": [
-					"application/json"
-				],
-				"produces": [
-					"application/json"
-				],
-				"parameters": [
-					{
-						"name": "CustContainerNo",
-						"in": "body",
-						"description": "Cust_ContainerNo",
-						"required": true,
-						"schema": {
-							"$ref": "#/definitions/CustContainerNo"
-						}
-					}
-				],
-				"responses": {
-					"200": {
-						"description": "OK",
-						"schema": {
-							"$ref": "#/definitions/CustContainerNoWrapper"
-						}
-					},
-					"examples": {
-						"application/json": {
-							"CUSTCONTAINER": null,
-							"CONTAINER1": null,
-							"CONTAINER2": null,
-							"CONTAINER3": null,
-							"CONTAINER4": null,
-							"CONTAINER5": null,
-							"CONTAINER6": null,
-							"CONTAINER7": null,
-							"CONTAINER8": null,
-							"CONTAINER9": null,
-							"CONTAINER10": null,
-							"CONTAINER11": null,
-							"CONTAINER12": null,
-							"CONTAINER13": null,
-							"CONTAINER14": null,
-							"CONTAINER15": null,
-							"CONTAINER16": null,
-							"CONTAINER17": null,
-							"CONTAINER18": null,
-							"CONTAINER19": null,
-							"CONTAINER20": null,
-							"CONTAINER21": null,
-							"CONTAINER22": null,
-							"CONTAINER23": null,
-							"CONTAINER24": null,
-							"CONTAINER25": null,
-							"CONTAINER26": null,
-							"CONTAINER27": null,
-							"CONTAINER28": null,
-							"CONTAINER29": null,
-							"CONTAINER30": null,
-							"SEALNO1": null,
-							"SEALNO2": null,
-							"SEALNO3": null,
-							"SEALNO4": null,
-							"SEALNO5": null,
-							"SEALNO6": null,
-							"SEALNO7": null,
-							"SEALNO8": null,
-							"SEALNO9": null,
-							"SEALNO10": null,
-							"SEALNO11": null,
-							"SEALNO12": null,
-							"SEALNO13": null,
-							"SEALNO14": null,
-							"SEALNO15": null,
-							"SEALNO16": null,
-							"SEALNO17": null,
-							"SEALNO18": null,
-							"SEALNO19": null,
-							"SEALNO20": null,
-							"SEALNO21": null,
-							"SEALNO22": null,
-							"SEALNO23": null,
-							"SEALNO24": null,
-							"SEALNO25": null,
-							"SEALNO26": null,
-							"SEALNO27": null,
-							"SEALNO28": null,
-							"SEALNO29": null,
-							"SEALNO30": null,
-							"REMARKS": null
-							
-					
-						
-						}
-					}
-				}
-			},
-			"security": [
-				{
-					"Default": []
-				}
-			]
-		}
-	},
-	"definitions": {
-		"CustContainerNoWrapper": {
-			"type": "object",
-			"properties": {
-				"data": {
-					"type": "array",
-					"items": {
-						"$ref": "#/definitions/ReadTallySheet"
-					}
-				},
-				"count": {
-					"type": "integer"
-				}
-			}
-		},
-		"CustContainerNo": {
-			"description": "Model for CustContainerNo",
-			"required": [
-				"CUSTCONTAINER"
-			],
-			"properties": {
-				"CUSTCONTAINER": {
-					"type": "string",
-					"x-example": "Cargo-T1-1"
-				}
-			}
-		},
-		"ReadTallySheet": {
-			"description": "Model for ReadTallySheet",
-			"required": [
-				"CONTAINER1"
-			],
-			"properties": {
-				"CONTAINER1": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER2": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CUSTCONTAINER": {
-					"type": "string",
-					"x-example": "Cargo-T1-1"
-				},
-				"CONTAINER3": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER4": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER5": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER6": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER7": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER8": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER9": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER10": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER11": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER12": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER13": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER14": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER15": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER16": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER17": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER18": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER19": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER20": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER21": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER22": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER23": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER24": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER25": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER26": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER27": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER28": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER29": {
-					"type": "string",
-					"x-example": ""
-				},
-				"CONTAINER30": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO1": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO2": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO3": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO4": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO5": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO6": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO7": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO8": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO9": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO10": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO11": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO12": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO13": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO14": { "string",
-					"x-example": ""
-				},
-				"SEALNO15": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO16": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO17": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO18": {
-					"type": "string",
-					"x-example": ""
-				},
-				"SEALNO19": {
-					"type": "string",
-					"x-example": "Cargo-T1"
-				},
-				"SEALNO20": {
-					"type": "string",
-					"x-example": "LOCAL"
-				},
-				"SEALNO21": {
-					"type": "string",
-					"format": "date-time",
-					"x-example": "2020-04-14T10:47:24"
-				},
-				"SEALNO22": {
-					"type": "string",
-					"format": "date-time",
-					"x-example": "2020-04-14T10:47:24"
-				},
-				"SEALNO23": {
-					"type": "string",
-					"x-example": "11"
-				},
-				"SEALNO24": {
-					"type": "string",
-					"x-example": "11"
-				},
-				"SEALNO25": {
-					"type": "string",
-					"x-example": "1"
-				},
-				"SEALNO26": {
-					"type": "string",
-					"x-example": "1"
-				},
-				"SEALNO27": {
-					"type": "string",
-					"x-example": "Singapore"
-				},
-				"SEALNO28": {
-					"type": "string",
-					"x-example": "VME"
-				},
-				"SEALNO29": {
-					"type": "string",
-					"x-example": "LCL"
-				},
-				"SEALNO30": {
-						"type": "string",
-					"format": "int32",
-					"x-example": "1"
-				},
-				"REMARKS":{
-					"type": "string",
-					"x-example": ""
-				}
-				
-			}
-		}
-	},
+  "swagger": "2.0",
+  "info": {
+    "title": "Vinfiniti",
+    "description": "API for twlsg.vinfiniti.biz:8210",
+    "version": "0.0.0"
+  },
+  "host": "twlsg.vinfiniti.biz:8210",
+  "basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/TBLEDI_MELS_CNRT_SEALNO": {
+      "post": {
+        "tags": [
+          "TBLEDI_MELS_CNRT_SEALNO"
+        ],
+        "description": "Read tally sheet",
+        "operationId": "Read_TallySheet",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "CustContainerNo",
+            "in": "body",
+            "description": "Cust_ContainerNo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CustContainerNo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CustContainerNoWrapper"
+            }
+          },
+          "examples": {
+            "application/json": {
+              "CUSTCONTAINER": null,
+              "CONTAINER1": null,
+              "CONTAINER2": null,
+              "CONTAINER3": null,
+              "CONTAINER4": null,
+              "CONTAINER5": null,
+              "CONTAINER6": null,
+              "CONTAINER7": null,
+              "CONTAINER8": null,
+              "CONTAINER9": null,
+              "CONTAINER10": null,
+              "CONTAINER11": null,
+              "CONTAINER12": null,
+              "CONTAINER13": null,
+              "CONTAINER14": null,
+              "CONTAINER15": null,
+              "CONTAINER16": null,
+              "CONTAINER17": null,
+              "CONTAINER18": null,
+              "CONTAINER19": null,
+              "CONTAINER20": null,
+              "CONTAINER21": null,
+              "CONTAINER22": null,
+              "CONTAINER23": null,
+              "CONTAINER24": null,
+              "CONTAINER25": null,
+              "CONTAINER26": null,
+              "CONTAINER27": null,
+              "CONTAINER28": null,
+              "CONTAINER29": null,
+              "CONTAINER30": null,
+              "SEALNO1": null,
+              "SEALNO2": null,
+              "SEALNO3": null,
+              "SEALNO4": null,
+              "SEALNO5": null,
+              "SEALNO6": null,
+              "SEALNO7": null,
+              "SEALNO8": null,
+              "SEALNO9": null,
+              "SEALNO10": null,
+              "SEALNO11": null,
+              "SEALNO12": null,
+              "SEALNO13": null,
+              "SEALNO14": null,
+              "SEALNO15": null,
+              "SEALNO16": null,
+              "SEALNO17": null,
+              "SEALNO18": null,
+              "SEALNO19": null,
+              "SEALNO20": null,
+              "SEALNO21": null,
+              "SEALNO22": null,
+              "SEALNO23": null,
+              "SEALNO24": null,
+              "SEALNO25": null,
+              "SEALNO26": null,
+              "SEALNO27": null,
+              "SEALNO28": null,
+              "SEALNO29": null,
+              "SEALNO30": null,
+              "REMARKS": null
+              
+          
+            
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "Default": []
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "CustContainerNoWrapper": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ReadTallySheet"
+          }
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "CustContainerNo": {
+      "description": "Model for CustContainerNo",
+      "required": [
+        "CUSTCONTAINER"
+      ],
+      "properties": {
+        "CUSTCONTAINER": {
+          "type": "string",
+          "x-example": "Cargo-T1-1"
+        }
+      }
+    },
+    "ReadTallySheet": {
+      "description": "Model for ReadTallySheet",
+      "required": [
+        "CONTAINER1"
+      ],
+      "properties": {
+        "CONTAINER1": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER2": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CUSTCONTAINER": {
+          "type": "string",
+          "x-example": "Cargo-T1-1"
+        },
+        "CONTAINER3": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER4": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER5": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER6": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER7": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER8": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER9": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER10": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER11": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER12": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER13": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER14": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER15": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER16": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER17": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER18": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER19": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER20": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER21": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER22": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER23": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER24": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER25": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER26": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER27": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER28": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER29": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER30": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO1": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO2": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO3": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO4": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO5": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO6": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO7": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO8": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO9": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO10": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO11": {
+          "type": "string",
+          "x-example": ""
+        },
+           "SEALNO12": {
+          "type": "string",
+          "x-example": ""
+        },
+           "SEALNO13": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO14": {
+          "type":"string",
+          "x-example": ""
+        },
+        "SEALNO15": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO16": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO17": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO18": {
+          "type": "string",
+          "x-example": ""
+        },
+        "SEALNO19": {
+          "type": "string",
+          "x-example": "Cargo-T1"
+        },
+        "SEALNO20": {
+          "type": "string",
+          "x-example": "LOCAL"
+        },
+        "SEALNO21": {
+          "type": "string",
+          "format": "date-time",
+          "x-example": "2020-04-14T10:47:24"
+        },
+        "SEALNO22": {
+          "type": "string",
+          "format": "date-time",
+          "x-example": "2020-04-14T10:47:24"
+        },
+        "SEALNO23": {
+          "type": "string",
+          "x-example": "11"
+        },
+        "SEALNO24": {
+          "type": "string",
+          "x-example": "11"
+        },
+        "SEALNO25": {
+          "type": "string",
+          "x-example": "1"
+        },
+        "SEALNO26": {
+          "type": "string",
+          "x-example": "1"
+        },
+        "SEALNO27": {
+          "type": "string",
+          "x-example": "Singapore"
+        },
+        "SEALNO28": {
+          "type": "string",
+          "x-example": "VME"
+        },
+        "SEALNO29": {
+          "type": "string",
+          "x-example": "LCL"
+        },
+        "SEALNO30": {
+            "type": "string",
+          "format": "int32",
+          "x-example": "1"
+        },
+        "REMARKS":{
+          "type": "string",
+          "x-example": ""
+        }
+        
+      }
+    }
+  },
 "securityDefinitions": {
     "Default": {
         "description": "Default Authentication",
