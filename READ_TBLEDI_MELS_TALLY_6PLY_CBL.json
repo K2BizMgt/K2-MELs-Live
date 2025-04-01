@@ -1,175 +1,472 @@
 {
-	"swagger": "2.0",
-	"info": {
-		"title": "Vinfiniti",
-		"description": "API for twlsg.vinfiniti.biz:8210",
-		"version": "0.0.0"
-	},
-	"host": "twlsg.vinfiniti.biz:8210",
-	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
-	"schemes": [
-		"https"
-	],
-	"paths": {
-		"/TBLEDI_MELS_TALLY_6PLY_CBL": {
-			"post": {
-				"tags": [
-					"TBLEDI_MELS_TALLY_6PLY_CBL"
-				],
-				"description": "Read TBLEDI_MELS_TALLY_6PLY_CBL ",
-				"operationId": "Read_TBLEDI_MELS_TALLY_6PLY_CBL",
-				"consumes": [
-					"application/json"
-				],
-				"produces": [
-					"application/json"
-				],
-				"parameters": [
-					{
-						"name": "CustContainerNo",
-						"in": "body",
-						"description": "Cust_ContainerNo",
-						"required": true,
-						"schema": {
-							"$ref": "#/definitions/CustContainerNo"
-						}
-					}
-				],
-				"responses": {
-					"200": {
-						"description": "OK",
-						"schema": {
-							"$ref": "#/definitions/CustContainerNoWrapper"
-						}
-					},
-					"examples": {
-						"application/json": {
-							"CUSTCONTAINER": null,
-							"PLY_1": null,
-							"PLY_2": null,
-							"PLY_3": null,
-							"PLY_4": null,
-							"PLY_5": null,
-							"PLY_6": null,
-							"PLY_7": null,
-							"PLY_8": null,
-							"PLY_9": null,
-							"PLY_10": null,
-							"PLY_11": null,
-							"PLY_12": null
-						
-										
-						}
-					}
-				}
-			},
-			"security": [
-				{
-					"Default": []
-				}
-			]
-		}
-	},
-	"definitions": {
-		"CustContainerNoWrapper": {
-			"type": "object",
-			"properties": {
-				"data": {
-					"type": "array",
-					"items": {
-						"$ref": "#/definitions/ReadPiListSI"
-					}
-				},
-				"count": {
-					"type": "integer"
-				}
-			}
-		},
-		"CustContainerNo": {
-			"description": "Model for CustContainerNo",
-			"required": [
-				"CUSTCONTAINER"
-			],
-			"properties": {
-				"CUSTCONTAINER": {
-					"type": "string",
-					"x-example": "Cargo-T1-1"
-				}
-			}
-		},
-		"Read6PLYCBL": {
-			"description": "Model for Read6PLYCBL",
-			"required": [
-				"CUSTCONTAINER"
-			],
-			"properties": {
-				"CUSTCONTAINER": {
-					"type": "string",
-					"x-example": ""
-				},
-				"PLY_1": {
-					"type": "string",
-					"x-example": ""	
-                    },
-				"PLY_2": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_3": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_4": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_5": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_6": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_7": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_8": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_9": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_10": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_11": {
-					"type": "string",
-					"x-example": ""	
-	            },
-				"PLY_12": {
-					"type": "string",
-					"x-example": ""						
-	
-				}
-			}
-		}
-	},
-	"securityDefinitions": {
-		"Default": {
-			"description": "Default Authentication",
-			"type": "basic"
-		}
-	},
-	"security": [],
-	"tags": [
-		{
-			"name": "TBLEDI_MELS_TALLY_6PLY_CBL",
-			"description": "Operations about TBLEDI_MELS_TALLY_6PLY_CBL"
-		}
-	]
+  "swagger": "2.0",
+  "info": {
+    "title": "Vinfiniti",
+    "description": "API for twlsg.vinfiniti.biz:8210",
+    "version": "0.0.0"
+  },
+  "host": "twlsg.vinfiniti.biz:8210",
+  "basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/TBLEDI_MELS_TALLY_6PLY_CBL": {
+      "post": {
+        "tags": [
+          "TBLEDI_MELS_TALLY_6PLY_CBL"
+        ],
+        "description": "Read TBLEDI_MELS_TALLY_6PLY_CBL ",
+        "operationId": "Read_TBLEDI_MELS_TALLY_6PLY_CBL",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "CustContainerNo",
+            "in": "body",
+            "description": "Cust_ContainerNo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CustContainerNo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CustContainerNoWrapper"
+            },
+            "examples": {
+              "application/json": {
+                "CUSTCONTAINER": null,
+                "PLY_1": null,
+                "PLY_2": null,
+                "PLY_3": null,
+                "PLY_4": null,
+                "PLY_5": null,
+                "PLY_6": null,
+                "PLY_7": null,
+                "PLY_8": null,
+                "PLY_9": null,
+                "PLY_10": null,
+                "PLY_11": null,
+                "PLY_12": null,
+                "CONTAINER1": null,
+                "SEALNO1": null,
+                "CONTAINER2": null,
+                "SEALNO2": null,
+                "CONTAINER3": null,
+                "SEALNO3": null,
+                "CONTAINER4": null,
+                "SEALNO4": null,
+                "CONTAINER5": null,
+                "SEALNO5": null,
+                "CONTAINER6": null,
+                "SEALNO6": null,
+                "CONTAINER7": null,
+                "SEALNO7": null,
+                "CONTAINER8": null,
+                "SEALNO8": null,
+                "CONTAINER9": null,
+                "SEALNO9": null,
+                "CONTAINER10": null,
+                "SEALNO10": null,
+                "CONTAINER11": null,
+                "SEALNO11": null,
+                "CONTAINER12": null,
+                "SEALNO12": null,
+                "CONTAINER13": null,
+                "SEALNO13": null,
+                "CONTAINER14": null,
+                "SEALNO14": null,
+                "CONTAINER15": null,
+                "SEALNO15": null,
+                "CONTAINER16": null,
+                "SEALNO16": null,
+                "CONTAINER17": null,
+                "SEALNO17": null,
+                "CONTAINER18": null,
+                "SEALNO18": null,
+                "CONTAINER19": null,
+                "SEALNO19": null,
+                "CONTAINER20": null,
+                "SEALNO20": null,
+                "CONTAINER21": null,
+                "SEALNO21": null,
+                "CONTAINER22": null,
+                "SEALNO22": null,
+                "CONTAINER23": null,
+                "SEALNO23": null,
+                "CONTAINER24": null,
+                "SEALNO24": null,
+                "CONTAINER25": null,
+                "SEALNO25": null,
+                "CONTAINER26": null,
+                "SEALNO26": null,
+                "CONTAINER27": null,
+                "SEALNO27": null,
+                "CONTAINER28": null,
+                "SEALNO28": null,
+                "CONTAINER29": null,
+                "SEALNO29": null,
+                "CONTAINER30": null,
+                "SEALNO30": null
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "Default": []
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "CustContainerNoWrapper": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Read6PLYCBL"
+          }
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "CustContainerNo": {
+      "description": "Model for CustContainerNo",
+      "required": [
+        "CUSTCONTAINER"
+      ],
+      "properties": {
+        "CUSTCONTAINER": {
+          "type": "string",
+          "x-example": "Cargo-T1-1"
+        }
+      }
+    },
+    "Read6PLYCBL": {
+      "description": "Model for Read6PLYCBL",
+      "required": [
+        "CUSTCONTAINER"
+      ],
+      "properties": {
+        "CUSTCONTAINER": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_1": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_2": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_3": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_4": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_5": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_6": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_7": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_8": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_9": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_10": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_11": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_12": {
+          "type": "string",
+          "x-example": ""
+        },
+        "CONTAINER1": {
+          "type": "string",
+          "x-example": "Cargo-T1-1"
+        },
+        "SEALNO1": {
+          "type": "string",
+          "x-example": "Seal-123"
+        },
+        "CONTAINER2": {
+          "type": "string",
+          "x-example": "Cargo-T1-2"
+        },
+        "SEALNO2": {
+          "type": "string",
+          "x-example": "Seal-124"
+        },
+        "CONTAINER3": {
+          "type": "string",
+          "x-example": "Cargo-T1-3"
+        },
+        "SEALNO3": {
+          "type": "string",
+          "x-example": "Seal-125"
+        },
+        "CONTAINER4": {
+          "type": "string",
+          "x-example": "Cargo-T1-4"
+        },
+        "SEALNO4": {
+          "type": "string",
+          "x-example": "Seal-126"
+        },
+        "CONTAINER5": {
+          "type": "string",
+          "x-example": "Cargo-T1-5"
+        },
+        "SEALNO5": {
+          "type": "string",
+          "x-example": "Seal-127"
+        },
+        "CONTAINER6": {
+          "type": "string",
+          "x-example": "Cargo-T1-6"
+        },
+        "SEALNO6": {
+          "type": "string",
+          "x-example": "Seal-128"
+        },
+        "CONTAINER7": {
+          "type": "string",
+          "x-example": "Cargo-T1-7"
+        },
+        "SEALNO7": {
+          "type": "string",
+          "x-example": "Seal-129"
+        },
+        "CONTAINER8": {
+          "type": "string",
+          "x-example": "Cargo-T1-8"
+        },
+        "SEALNO8": {
+          "type": "string",
+          "x-example": "Seal-130"
+        },
+        "CONTAINER9": {
+          "type": "string",
+          "x-example": "Cargo-T1-9"
+        },
+        "SEALNO9": {
+          "type": "string",
+          "x-example": "Seal-131"
+        },
+        "CONTAINER10": {
+          "type": "string",
+          "x-example": "Cargo-T1-10"
+        },
+        "SEALNO10": {
+          "type": "string",
+          "x-example": "Seal-132"
+        },
+        "CONTAINER11": {
+          "type": "string",
+          "x-example": "Cargo-T1-11"
+        },
+        "SEALNO11": {
+          "type": "string",
+          "x-example": "Seal-133"
+        },
+        "CONTAINER12": {
+          "type": "string",
+          "x-example": "Cargo-T1-12"
+        },
+        "SEALNO12": {
+          "type": "string",
+          "x-example": "Seal-134"
+        },
+        "CONTAINER13": {
+          "type": "string",
+          "x-example": "Cargo-T1-13"
+        },
+        "SEALNO13": {
+          "type": "string",
+          "x-example": "Seal-135"
+        },
+        "CONTAINER14": {
+          "type": "string",
+          "x-example": "Cargo-T1-14"
+        },
+        "SEALNO14": {
+          "type": "string",
+          "x-example": "Seal-136"
+        },
+        "CONTAINER15": {
+          "type": "string",
+          "x-example": "Cargo-T1-15"
+        },
+        "SEALNO15": {
+          "type": "string",
+          "x-example": "Seal-137"
+        },
+        "CONTAINER16": {
+          "type": "string",
+          "x-example": "Cargo-T1-16"
+        },
+        "SEALNO16": {
+          "type": "string",
+          "x-example": "Seal-138"
+        },
+        "CONTAINER17": {
+          "type": "string",
+          "x-example": "Cargo-T1-17"
+        },
+        "SEALNO17": {
+          "type": "string",
+          "x-example": "Seal-139"
+        },
+        "CONTAINER18": {
+          "type": "string",
+          "x-example": "Cargo-T1-18"
+        },
+        "SEALNO18": {
+          "type": "string",
+          "x-example": "Seal-140"
+        },
+        "CONTAINER19": {
+          "type": "string",
+          "x-example": "Cargo-T1-19"
+        },
+        "SEALNO19": {
+          "type": "string",
+          "x-example": "Seal-141"
+        },
+        "CONTAINER20": {
+          "type": "string",
+          "x-example": "Cargo-T1-20"
+        },
+        "SEALNO20": {
+          "type": "string",
+          "x-example": "Seal-142"
+        },
+        "CONTAINER21": {
+          "type": "string",
+          "x-example": "Cargo-T1-21"
+        },
+        "SEALNO21": {
+          "type": "string",
+          "x-example": "Seal-143"
+        },
+        "CONTAINER22": {
+          "type": "string",
+          "x-example": "Cargo-T1-22"
+        },
+        "SEALNO22": {
+          "type": "string",
+          "x-example": "Seal-144"
+        },
+        "CONTAINER23": {
+          "type": "string",
+          "x-example": "Cargo-T1-23"
+        },
+        "SEALNO23": {
+          "type": "string",
+          "x-example": "Seal-145"
+        },
+        "CONTAINER24": {
+          "type": "string",
+          "x-example": "Cargo-T1-24"
+        },
+        "SEALNO24": {
+          "type": "string",
+          "x-example": "Seal-146"
+        },
+        "CONTAINER25": {
+          "type": "string",
+          "x-example": "Cargo-T1-25"
+        },
+        "SEALNO25": {
+          "type": "string",
+          "x-example": "Seal-147"
+        },
+        "CONTAINER26": {
+          "type": "string",
+          "x-example": "Cargo-T1-26"
+        },
+        "SEALNO26": {
+          "type": "string",
+          "x-example": "Seal-148"
+        },
+        "CONTAINER27": {
+          "type": "string",
+          "x-example": "Cargo-T1-27"
+        },
+        "SEALNO27": {
+          "type": "string",
+          "x-example": "Seal-149"
+        },
+        "CONTAINER28": {
+          "type": "string",
+          "x-example": "Cargo-T1-28"
+        },
+        "SEALNO28": {
+          "type": "string",
+          "x-example": "Seal-150"
+        },
+        "CONTAINER29": {
+          "type": "string",
+          "x-example": "Cargo-T1-29"
+        },
+        "SEALNO29": {
+          "type": "string",
+          "x-example": "Seal-151"
+        },
+        "CONTAINER30": {
+          "type": "string",
+          "x-example": "Cargo-T1-30"
+        },
+        "SEALNO30": {
+          "type": "string",
+          "x-example": "Seal-152"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Default": {
+      "description": "Default Authentication",
+      "type": "basic"
+    }
+  },
+  "security": [],
+  "tags": [
+    {
+      "name": "TBLEDI_MELS_TALLY_6PLY_CBL",
+      "description": "Operations about TBLEDI_MELS_TALLY_6PLY_CBL"
+    }
+  ]
 }
