@@ -147,7 +147,7 @@
         }
       }
     },
-    "ReadTallySheet": {
+    "ReadCntSealNo": {
       "description": "Model for ReadCtnrAndSealNo",
       "required": [
         "CONTAINER1"
