@@ -17,7 +17,7 @@
           "TBLEDI_MELS_CNRT_SEALNO"
         ],
         "description": "Read tally sheet",
-        "operationId": "Read_TallySheet",
+        "operationId": "Read_ctnt_sealNo",
         "consumes": [
           "application/json"
         ],
@@ -127,7 +127,7 @@
         "data": {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/ReadTallySheet"
+            "$ref": "#/definitions/ReadCntSealNo"
           }
         },
         "count": {
@@ -148,7 +148,7 @@
       }
     },
     "ReadTallySheet": {
-      "description": "Model for ReadTallySheet",
+      "description": "Model for ReadCtnrAndSealNo",
       "required": [
         "CONTAINER1"
       ],
@@ -359,13 +359,13 @@
         },
         "SEALNO21": {
           "type": "string",
-          "format": "date-time",
-          "x-example": "2020-04-14T10:47:24"
+          "format": "LOCAL",
+          "x-example": "abc"
         },
         "SEALNO22": {
           "type": "string",
-          "format": "date-time",
-          "x-example": "2020-04-14T10:47:24"
+          "format": "ABC",
+          "x-example": "BBC"
         },
         "SEALNO23": {
           "type": "string",
