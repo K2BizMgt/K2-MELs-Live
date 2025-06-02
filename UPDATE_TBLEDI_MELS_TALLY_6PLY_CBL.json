@@ -95,9 +95,6 @@
           "type": "Boolean",
           "x-example": ""
         },
-        // Dynamically add CONTAINER1 to CONTAINER30 and SEALNO1 to SEALNO30
-        // Each field is Boolean type, you can adjust the type if needed
-        // CONTAINER1 to CONTAINER30
         "CONTAINER1": { "type": "Boolean", "x-example": "" },
         "CONTAINER2": { "type": "Boolean", "x-example": "" },
         "CONTAINER3": { "type": "Boolean", "x-example": "" },
