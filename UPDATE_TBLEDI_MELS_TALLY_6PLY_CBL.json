@@ -1,114 +1,177 @@
 {
-	"swagger": "2.0",
-	"info": {
-		"title": "TeckWah Update REST",
-		"description": "API for twlsg.vinfiniti.biz:8210",
-		"version": "0.1"
-	},
-	"host": "twlsg.vinfiniti.biz:8210",
-	"basePath": "/Vin3RService/rest/commonEdi",
-	"schemes": [
-		"https"
-	],
-	"paths": {
-		"/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_6PLY_CBL": {
-			"post": {
-				"tags": [
-					"CognitiveServices"
-				],
-				"parameters": [
-					{
-						"in": "body",
-						"name": "body",
-						"schema": {
-							"type": "array",
-							"items": {
-								"$ref": "#/definitions/MELSTALLY6PLYCBL"
-							}
-						}
-					}
-				],
-				"responses": {
-					"200": {
-						"description": "Success",
-						"schema": {
-							"type": "string"
-						}
-					}
-				}
-			}
-		}
-	},
-	"definitions": {
-		"MELSTALLY6PLYCBL": {
-			"type": "object",
-			"properties": {
-				"CUSTCONTAINER": {
-					"type": "string",
-					"x-example": ""
-				},
-					"PLY_1": {
-					"type": "string",
-					"x-example": ""	
-                    },
-				"PLY_2": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_3": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_4": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_5": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_6": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_7": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_8": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_9": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_10": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_11": {
-					"type": "Boolean",
-					"x-example": ""	
-	            },
-				"PLY_12": {
-					"type": "Boolean",
-					"x-example": ""	
-				}
-			}
-		}
-	},
-	"securityDefinitions": {
-		"Default": {
-			"description": "Default Authentication",
-			"type": "basic"
-		}
-	},
-	"security": [],
-	"tags": [
-		{
-			"name": "TBLEDI_MELS_TALLY_6PLY_CBL",
-			"description": "Operations about updating values using TBLEDI_MELS_TALLY_6PLY_CBL"
-		}
-	]
+  "swagger": "2.0",
+  "info": {
+    "title": "TeckWah Update REST",
+    "description": "API for twlsg.vinfiniti.biz:8210",
+    "version": "0.1"
+  },
+  "host": "twlsg.vinfiniti.biz:8210",
+  "basePath": "/Vin3RService/rest/commonEdi",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_6PLY_CBL": {
+      "post": {
+        "tags": [
+          "CognitiveServices"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/MELSTALLY6PLYCBL"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "MELSTALLY6PLYCBL": {
+      "type": "object",
+      "properties": {
+        "CUSTCONTAINER": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_1": {
+          "type": "string",
+          "x-example": ""
+        },
+        "PLY_2": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_3": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_4": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_5": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_6": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_7": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_8": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_9": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_10": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_11": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        "PLY_12": {
+          "type": "Boolean",
+          "x-example": ""
+        },
+        // Dynamically add CONTAINER1 to CONTAINER30 and SEALNO1 to SEALNO30
+        // Each field is Boolean type, you can adjust the type if needed
+        // CONTAINER1 to CONTAINER30
+        "CONTAINER1": { "type": "Boolean", "x-example": "" },
+        "CONTAINER2": { "type": "Boolean", "x-example": "" },
+        "CONTAINER3": { "type": "Boolean", "x-example": "" },
+        "CONTAINER4": { "type": "Boolean", "x-example": "" },
+        "CONTAINER5": { "type": "Boolean", "x-example": "" },
+        "CONTAINER6": { "type": "Boolean", "x-example": "" },
+        "CONTAINER7": { "type": "Boolean", "x-example": "" },
+        "CONTAINER8": { "type": "Boolean", "x-example": "" },
+        "CONTAINER9": { "type": "Boolean", "x-example": "" },
+        "CONTAINER10": { "type": "Boolean", "x-example": "" },
+        "CONTAINER11": { "type": "Boolean", "x-example": "" },
+        "CONTAINER12": { "type": "Boolean", "x-example": "" },
+        "CONTAINER13": { "type": "Boolean", "x-example": "" },
+        "CONTAINER14": { "type": "Boolean", "x-example": "" },
+        "CONTAINER15": { "type": "Boolean", "x-example": "" },
+        "CONTAINER16": { "type": "Boolean", "x-example": "" },
+        "CONTAINER17": { "type": "Boolean", "x-example": "" },
+        "CONTAINER18": { "type": "Boolean", "x-example": "" },
+        "CONTAINER19": { "type": "Boolean", "x-example": "" },
+        "CONTAINER20": { "type": "Boolean", "x-example": "" },
+        "CONTAINER21": { "type": "Boolean", "x-example": "" },
+        "CONTAINER22": { "type": "Boolean", "x-example": "" },
+        "CONTAINER23": { "type": "Boolean", "x-example": "" },
+        "CONTAINER24": { "type": "Boolean", "x-example": "" },
+        "CONTAINER25": { "type": "Boolean", "x-example": "" },
+        "CONTAINER26": { "type": "Boolean", "x-example": "" },
+        "CONTAINER27": { "type": "Boolean", "x-example": "" },
+        "CONTAINER28": { "type": "Boolean", "x-example": "" },
+        "CONTAINER29": { "type": "Boolean", "x-example": "" },
+        "CONTAINER30": { "type": "Boolean", "x-example": "" },
+        "SEALNO1": { "type": "Boolean", "x-example": "" },
+        "SEALNO2": { "type": "Boolean", "x-example": "" },
+        "SEALNO3": { "type": "Boolean", "x-example": "" },
+        "SEALNO4": { "type": "Boolean", "x-example": "" },
+        "SEALNO5": { "type": "Boolean", "x-example": "" },
+        "SEALNO6": { "type": "Boolean", "x-example": "" },
+        "SEALNO7": { "type": "Boolean", "x-example": "" },
+        "SEALNO8": { "type": "Boolean", "x-example": "" },
+        "SEALNO9": { "type": "Boolean", "x-example": "" },
+        "SEALNO10": { "type": "Boolean", "x-example": "" },
+        "SEALNO11": { "type": "Boolean", "x-example": "" },
+        "SEALNO12": { "type": "Boolean", "x-example": "" },
+        "SEALNO13": { "type": "Boolean", "x-example": "" },
+        "SEALNO14": { "type": "Boolean", "x-example": "" },
+        "SEALNO15": { "type": "Boolean", "x-example": "" },
+        "SEALNO16": { "type": "Boolean", "x-example": "" },
+        "SEALNO17": { "type": "Boolean", "x-example": "" },
+        "SEALNO18": { "type": "Boolean", "x-example": "" },
+        "SEALNO19": { "type": "Boolean", "x-example": "" },
+        "SEALNO20": { "type": "Boolean", "x-example": "" },
+        "SEALNO21": { "type": "Boolean", "x-example": "" },
+        "SEALNO22": { "type": "Boolean", "x-example": "" },
+        "SEALNO23": { "type": "Boolean", "x-example": "" },
+        "SEALNO24": { "type": "Boolean", "x-example": "" },
+        "SEALNO25": { "type": "Boolean", "x-example": "" },
+        "SEALNO26": { "type": "Boolean", "x-example": "" },
+        "SEALNO27": { "type": "Boolean", "x-example": "" },
+        "SEALNO28": { "type": "Boolean", "x-example": "" },
+        "SEALNO29": { "type": "Boolean", "x-example": "" },
+        "SEALNO30": { "type": "Boolean", "x-example": "" }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Default": {
+      "description": "Default Authentication",
+      "type": "basic"
+    }
+  },
+  "security": [],
+  "tags": [
+    {
+      "name": "TBLEDI_MELS_TALLY_6PLY_CBL",
+      "description": "Operations about updating values using TBLEDI_MELS_TALLY_6PLY_CBL"
+    }
+  ]
 }
