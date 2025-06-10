@@ -1,48 +1,172 @@
-"ReadPiListSI": {
-  "description": "Model for ReadPiListSI",
-  "required": [
-    "CUSTCONTAINER"
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Vinfiniti",
+    "description": "API for twlsg.vinfiniti.biz:8210",
+    "version": "0.0.0"
+  },
+  "host": "twlsg.vinfiniti.biz:8210",
+  "basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+  "schemes": [
+    "https"
   ],
-  "properties": {
-    "CUSTCONTAINER": {
-      "type": "string",
-      "x-example": ""
-    },
-    "SPECIAL_INSTRUCTION": {
-      "type": "string",
-      "x-example": ""
-    },
-    "AOC_LABEL_PASTED": {
-      "type": "string",
-      "x-example": "Y"
-    },
-    "AOC_LABEL_CHECK": {
-      "type": "string",
-      "x-example": "Y"
-    },
-    "RED_LABEL_PASTED": {
-      "type": "string",
-      "x-example": "N"
-    },
-    "RED_LABEL_CHECK": {
-      "type": "string",
-      "x-example": "N"
-    },
-    "GREEN_LABEL_PASTED": {
-      "type": "string",
-      "x-example": "Y"
-    },
-    "GREEN_LABEL_CHECK": {
-      "type": "string",
-      "x-example": "Y"
-    },
-    "BLUE_LABEL_REMOVED": {
-      "type": "string",
-      "x-example": "N"
-    },
-    "BLUE_LABEL_CHECK": {
-      "type": "string",
-      "x-example": "N"
+  "paths": {
+    "/TBLEDI_MELS_TALLY_PILIST_SI": {
+      "post": {
+        "tags": [
+          "TBLEDI_MELS_TALLY_PILIST_SI"
+        ],
+        "description": "Read TBLEDI_MELS_TALLY_PILIST_SI",
+        "operationId": "Read_TBLEDI_MELS_TALLY_PILIST_SI",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "CustContainerNo",
+            "in": "body",
+            "description": "Cust_ContainerNo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CustContainerNo"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CustContainerNoWrapper"
+            },
+            "examples": {
+              "application/json": {
+                "data": [
+                  {
+                    "CUSTCONTAINER": null,
+                    "SPECIAL_INSTRUCTION": null,
+                    "AOC_LABEL_PASTED": null,
+                    "AOC_LABEL_CHECK": null,
+                    "RED_LABEL_PASTED": null,
+                    "RED_LABEL_CHECK": null,
+                    "GREEN_LABEL_PASTED": null,
+                    "GREEN_LABEL_CHECK": null,
+                    "BLUE_LABEL_REMOVED": null,
+                    "BLUE_LABEL_CHECK": null
+                  }
+                ],
+                "count": 1
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "Default": []
+        }
+      ]
     }
-  }
+  },
+  "definitions": {
+    "CustContainerNoWrapper": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ReadPiListSI"
+          }
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "CustContainerNo": {
+      "description": "Model for CustContainerNo",
+      "required": [
+        "CUSTCONTAINER"
+      ],
+      "properties": {
+        "CUSTCONTAINER": {
+          "type": "string",
+          "x-example": "Cargo-T1-1"
+        }
+      }
+    },
+    "ReadPiListSI": {
+      "description": "Model for ReadPiListSI",
+      "required": [
+        "CUSTCONTAINER"
+      ],
+      "properties": {
+        "CUSTCONTAINER": {
+          "type": "string",
+          "maxLength": 50,
+          "x-example": "CONT12345"
+        },
+        "SPECIAL_INSTRUCTION": {
+          "type": "string",
+          "maxLength": 500,
+          "x-example": "Handle with care"
+        },
+        "AOC_LABEL_PASTED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Yes"
+        },
+        "AOC_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Checked"
+        },
+        "RED_LABEL_PASTED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "No"
+        },
+        "RED_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Unchecked"
+        },
+        "GREEN_LABEL_PASTED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Yes"
+        },
+        "GREEN_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Checked"
+        },
+        "BLUE_LABEL_REMOVED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "No"
+        },
+        "BLUE_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Unchecked"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Default": {
+      "description": "Default Authentication",
+      "type": "basic"
+    }
+  },
+  "security": [],
+  "tags": [
+    {
+      "name": "TBLEDI_MELS_TALLY_PILIST_SI",
+      "description": "Operations about TBLEDI_MELS_TALLY_PILIST_SI"
+    }
+  ]
 }
