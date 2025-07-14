@@ -92,6 +92,26 @@
           "type": "string",
           "maxLength": 10,
           "x-example": "Unchecked"
+        },
+        "PICK_BY": {
+          "type": "string",
+          "maxLength": 25,
+          "x-example": "John Tan"
+        },
+        "PICK_BY_DATE": {
+          "type": "string",
+          "format": "date",
+          "x-example": "2025-07-14"
+        },
+        "TRANSFER_CHECK_BY": {
+          "type": "string",
+          "maxLength": 25,
+          "x-example": "Alice Lee"
+        },
+        "TRANSFER_CHECK_DATE": {
+          "type": "string",
+          "format": "date",
+          "x-example": "2025-07-15"
         }
       },
       "required": [
