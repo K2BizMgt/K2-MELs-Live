@@ -1,0 +1,216 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"title": "Vinfiniti",
+		"description": "API for twlsg.vinfiniti.biz:8210",
+		"version": "0.0.0"
+	},
+	"host": "twlsg.vinfiniti.biz:8210",
+	"basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+	"schemes": [
+		"https"
+	],
+	"paths": {
+		"/TBLEDI_MELS_TALLY_PICKLIST": {
+			"post": {
+				"tags": [
+					"TBLEDI_MELS_TALLY_PICKLIST"
+				],
+				"description": "Read tally PICKLIST",
+				"operationId": "Read_TallyPICKLIST",
+				"consumes": [
+					"application/json"
+				],
+				"produces": [
+					"application/json"
+				],
+				"parameters": [
+					{
+						"name": "EDI_STATUS",
+						"in": "body",
+						"description": "EDI_STATUS",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/EDI_STATUS"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"$ref": "#/definitions/CustContainerNoWrapper"
+						}
+					},
+					"examples": {
+						"application/json": {
+							"WAREHOUSE": null,
+							"ORDERNO": null,
+							"VIN_SHIPMENTMETHOD": "LCL",
+							"CUSTORDERNO": null,
+							"LOCATION": null,
+							"ITEMNO": null,
+							"LOT": null,
+							"ORDEREDQTY": null,
+							"PERBAG": null,
+							"PERPALLET": null,
+							"NUMOFBAGS": null,
+							"PICKQTY": null,
+							"PRODUCTTYPE": null,
+							"CONTAINERNO": null,
+							"CUSTCONTAINER": null,
+							"ROWCOUNT": "11",
+							"STATUS": null,
+							"VIN_ORDERNO": null,
+							"VIN_POS": null,
+							"CUSORDERNO_ITEMLOT_LOCPOS": null,
+							"PROGRAM_TYPE": null,
+							"EDI_STATUS": null,
+							"K2_STATUS": null
+							
+						
+						}
+					}
+				}
+			},
+			"security": [
+				{
+					"Default": []
+				}
+			]
+		}
+	},
+	"definitions": {
+		"CustContainerNoWrapper": {
+			"type": "object",
+			"properties": {
+				"data": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/ReadTallySheet"
+					}
+				},
+				"count": {
+					"type": "integer"
+				}
+			}
+		},
+		"EDI_STATUS": {
+			"description": "Model for EDI_STATUS",
+			"required": [
+				"EDI_STATUS"
+			],
+			"properties": {
+				"EDI_STATUS": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				}
+			}
+		},
+		"ReadTallySheet": {
+			"description": "Model for ReadTallyPICKLIST",
+			"required": [
+				"WAREHOUSE"
+			],
+			"properties": {
+				"WAREHOUSE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOCATION": {
+					"type": "string",
+					"x-example": "Cargo-T1-1"
+				},
+				"ITEMNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"LOT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ORDEREDQTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PERBAG": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PERPALLET": {
+					"type": "string",
+					"x-example": ""
+				},
+				"NUMOFBAGS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PICKQTY": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PRODUCTTYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CONTAINERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSTCONTAINER": {
+					"type": "string",
+					"x-example": ""
+				},
+				"ROWCOUNT": {
+					"type": "string",
+					"x-example": ""
+				},
+				"STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_ORDERNO": {
+					"type": "string",
+					"x-example": ""
+				},
+				"VIN_POS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"CUSORDERNO_ITEMLOT_LOCPOS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"PROGRAM_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"EDI_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+				"K2_STATUS": {
+					"type": "string",
+					"x-example": ""				
+				}
+			}
+		}
+	},
+	"securityDefinitions": {
+		"Default": {
+			"description": "Default Authentication",
+			"type": "basic"
+		}
+	},
+	"security": [],
+	"tags": [
+		{
+			"name": "TBLEDI_MELS_TALLY_PICKLIST",
+			"description": "Operations about TBLEDI_MELS_TALLY_PICKLIST"
+		}
+	]
+}
