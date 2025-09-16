@@ -14,12 +14,20 @@
     "/addOrUpdateEdiData/MELS/TBLEDI_MELS_TALLY_PILIST_SI": {
       "post": {
         "tags": [
-          "CognitiveServices"
+          "TBLEDI_MELS_TALLY_PILIST_SI"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
         ],
         "parameters": [
           {
             "in": "body",
             "name": "body",
+            "description": "Array of TALLY_PICKLIST_SI objects to add or update",
+            "required": true,
             "schema": {
               "type": "array",
               "items": {
@@ -33,15 +41,24 @@
             "description": "Success",
             "schema": {
               "type": "string"
+            },
+            "examples": {
+              "application/json": "OK"
             }
           }
-        }
+        },
+        "security": [
+          {
+            "Default": []
+          }
+        ]
       }
     }
   },
   "definitions": {
     "TALLY_PICKLIST_SI": {
       "type": "object",
+      "description": "Update payload for TBLEDI_MELS_TALLY_PILIST_SI",
       "properties": {
         "CUSTCONTAINER": {
           "type": "string",
@@ -112,6 +129,16 @@
           "type": "string",
           "format": "date",
           "x-example": "2025-07-15"
+        },
+        "MIX_LOT": {
+          "type": "string",
+          "maxLength": 50,
+          "x-example": "LOT-2025-A1"
+        },
+        "MIX_GRADE": {
+          "type": "string",
+          "maxLength": 20,
+          "x-example": "GRADE-B"
         }
       },
       "required": [
