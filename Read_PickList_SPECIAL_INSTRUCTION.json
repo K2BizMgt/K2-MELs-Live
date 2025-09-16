@@ -45,20 +45,22 @@
               "application/json": {
                 "data": [
                   {
-                    "CUSTCONTAINER": null,
-                    "SPECIAL_INSTRUCTION": null,
-                    "AOC_LABEL_PASTED": null,
-                    "AOC_LABEL_CHECK": null,
-                    "RED_LABEL_PASTED": null,
-                    "RED_LABEL_CHECK": null,
-                    "GREEN_LABEL_PASTED": null,
-                    "GREEN_LABEL_CHECK": null,
-                    "BLUE_LABEL_REMOVED": null,
-                    "BLUE_LABEL_CHECK": null,
-                    "PICK_BY": null,
-                    "PICK_BY_DATE": null,
-                    "TRANSFER_CHECK_BY": null,
-                    "TRANSFER_CHECK_DATE": null
+                    "CUSTCONTAINER": "CONT12345",
+                    "SPECIAL_INSTRUCTION": "Handle with care",
+                    "AOC_LABEL_PASTED": "Yes",
+                    "AOC_LABEL_CHECK": "Checked",
+                    "RED_LABEL_PASTED": "No",
+                    "RED_LABEL_CHECK": "Unchecked",
+                    "GREEN_LABEL_PASTED": "Yes",
+                    "GREEN_LABEL_CHECK": "Checked",
+                    "BLUE_LABEL_REMOVED": "No",
+                    "BLUE_LABEL_CHECK": "Unchecked",
+                    "PICK_BY": "John Tan",
+                    "PICK_BY_DATE": "2025-07-14",
+                    "TRANSFER_CHECK_BY": "Alice Lee",
+                    "TRANSFER_CHECK_DATE": "2025-07-15",
+                    "MIX_LOT": "LOT-2025-A1",
+                    "MIX_GRADE": "GRADE-B"
                   }
                 ],
                 "count": 1
@@ -176,6 +178,16 @@
           "type": "string",
           "format": "date",
           "x-example": "2025-07-15"
+        },
+        "MIX_LOT": {
+          "type": "string",
+          "maxLength": 50,
+          "x-example": "LOT-2025-A1"
+        },
+        "MIX_GRADE": {
+          "type": "string",
+          "maxLength": 20,
+          "x-example": "GRADE-B"
         }
       }
     }
