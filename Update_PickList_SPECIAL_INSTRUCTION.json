@@ -139,7 +139,14 @@
           "type": "string",
           "maxLength": 20,
           "x-example": "GRADE-B"
+        },
+		 "PICKLIST_STATUS": {
+          "type": "string",
+          "maxLength": 20,
+          "x-example": "OPEN"
         }
+		
+		
       },
       "required": [
         "CUSTCONTAINER"
