@@ -7,23 +7,31 @@
   },
   "host": "twlsg.vinfiniti.biz:8210",
   "basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
-  "schemes": ["https"],
+  "schemes": [
+    "https"
+  ],
   "paths": {
     "/TBLEDI_MELS_TALLY_PILIST_SI": {
       "post": {
-        "tags": ["TBLEDI_MELS_TALLY_PILIST_SI"],
+        "tags": [
+          "TBLEDI_MELS_TALLY_PILIST_SI"
+        ],
         "description": "Read TBLEDI_MELS_TALLY_PILIST_SI",
         "operationId": "Read_TBLEDI_MELS_TALLY_PILIST_SI",
-        "consumes": ["application/json"],
-        "produces": ["application/json"],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
-            "name": "body",
+            "name": "PICKLISTSTATUS",
             "in": "body",
             "description": "Filter by picklist_status",
             "required": true,
             "schema": {
-              "$ref": "#/definitions/picklist_status"
+              "$ref": "#/definitions/PICKLISTSTATUS"
             }
           }
         ],
@@ -53,20 +61,21 @@
                     "TRANSFER_CHECK_DATE": "2025-07-15",
                     "MIX_LOT": "LOT-2025-A1",
                     "MIX_GRADE": "GRADE-B",
-                    "picklist_status": "OPEN"
+					"PICKLIST_STATUS": "OPEN"
+					
                   }
                 ],
                 "count": 1
               }
             }
           }
-        },
-        "security": [
-          {
-            "Default": []
-          }
-        ]
-      }
+        }
+      },
+      "security": [
+        {
+          "Default": []
+        }
+      ]
     }
   },
   "definitions": {
@@ -84,24 +93,23 @@
         }
       }
     },
-    "picklist_status": {
-      "type": "object",
-      "description": "Model for picklist_status",
-      "required": ["picklist_status"],
+    "PICKLISTSTATUS": {
+      "description": "Model for PICKLISTSTATUS",
+      "required": [
+        "PICKLIST_STATUS"
+      ],
       "properties": {
-        "picklist_status": {
+        "PICKLIST_STATUS": {
           "type": "string",
-          "maxLength": 20,
-          "enum": ["OPEN", "CLOSED", "ALL"],
-          "x-example": "OPEN",
-          "description": "Filter status. Use ALL to return all records."
+          "x-example": "OPEN"
         }
       }
     },
     "ReadPiListSI": {
-      "type": "object",
       "description": "Model for ReadPiListSI",
-      "required": ["CUSTCONTAINER"],
+      "required": [
+        "CUSTCONTAINER"
+      ],
       "properties": {
         "CUSTCONTAINER": {
           "type": "string",
@@ -183,7 +191,7 @@
           "maxLength": 20,
           "x-example": "GRADE-B"
         },
-        "picklist_status": {
+		 "PICKLIST_STATUS": {
           "type": "string",
           "maxLength": 20,
           "x-example": "OPEN"
@@ -204,4 +212,4 @@
       "description": "Operations about TBLEDI_MELS_TALLY_PILIST_SI"
     }
   ]
-}
+}   
