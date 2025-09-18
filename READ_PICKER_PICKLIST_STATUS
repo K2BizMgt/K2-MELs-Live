@@ -26,9 +26,9 @@
         ],
         "parameters": [
           {
-            "name": "picklist_status",
+            "name": "pickliststatus",
             "in": "body",
-            "description": "Filter by picklist_status",
+            "description": "Filter by pickliststatus",
             "required": true,
             "schema": {
               "$ref": "#/definitions/picklist_status"
@@ -93,8 +93,8 @@
         }
       }
     },
-    "picklist_status": {
-      "description": "Model for picklist_status",
+    "pickliststatus": {
+      "description": "Model for pickliststatus",
       "required": [
         "picklist_status"
       ],
