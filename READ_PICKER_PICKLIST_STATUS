@@ -1,0 +1,215 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Vinfiniti",
+    "description": "API for twlsg.vinfiniti.biz:8210",
+    "version": "0.0.0"
+  },
+  "host": "twlsg.vinfiniti.biz:8210",
+  "basePath": "/Vin3RService/rest/commonEdi/getEdiData/MELS",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/TBLEDI_MELS_TALLY_PILIST_SI": {
+      "post": {
+        "tags": [
+          "TBLEDI_MELS_TALLY_PILIST_SI"
+        ],
+        "description": "Read TBLEDI_MELS_TALLY_PILIST_SI",
+        "operationId": "Read_TBLEDI_MELS_TALLY_PILIST_SI",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "picklist_status",
+            "in": "body",
+            "description": "Filter by picklist_status",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/picklist_status"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/CustContainerNoWrapper"
+            },
+            "examples": {
+              "application/json": {
+                "data": [
+                  {
+                    "CUSTCONTAINER": "CONT12345",
+                    "SPECIAL_INSTRUCTION": "Handle with care",
+                    "AOC_LABEL_PASTED": "Yes",
+                    "AOC_LABEL_CHECK": "Checked",
+                    "RED_LABEL_PASTED": "No",
+                    "RED_LABEL_CHECK": "Unchecked",
+                    "GREEN_LABEL_PASTED": "Yes",
+                    "GREEN_LABEL_CHECK": "Checked",
+                    "BLUE_LABEL_REMOVED": "No",
+                    "BLUE_LABEL_CHECK": "Unchecked",
+                    "PICK_BY": "John Tan",
+                    "PICK_BY_DATE": "2025-07-14",
+                    "TRANSFER_CHECK_BY": "Alice Lee",
+                    "TRANSFER_CHECK_DATE": "2025-07-15",
+                    "MIX_LOT": "LOT-2025-A1",
+                    "MIX_GRADE": "GRADE-B",
+					"picklist_status": "OPEN"
+					
+                  }
+                ],
+                "count": 1
+              }
+            }
+          }
+        }
+      },
+      "security": [
+        {
+          "Default": []
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "CustContainerNoWrapper": {
+      "type": "object",
+      "properties": {
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ReadPiListSI"
+          }
+        },
+        "count": {
+          "type": "integer"
+        }
+      }
+    },
+    "picklist_status": {
+      "description": "Model for picklist_status",
+      "required": [
+        "picklist_status"
+      ],
+      "properties": {
+        "picklist_status": {
+          "type": "string",
+          "x-example": "OPEN"
+        }
+      }
+    },
+    "ReadPiListSI": {
+      "description": "Model for ReadPiListSI",
+      "required": [
+        "CUSTCONTAINER"
+      ],
+      "properties": {
+        "CUSTCONTAINER": {
+          "type": "string",
+          "maxLength": 50,
+          "x-example": "CONT12345"
+        },
+        "SPECIAL_INSTRUCTION": {
+          "type": "string",
+          "maxLength": 500,
+          "x-example": "Handle with care"
+        },
+        "AOC_LABEL_PASTED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Yes"
+        },
+        "AOC_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Checked"
+        },
+        "RED_LABEL_PASTED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "No"
+        },
+        "RED_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Unchecked"
+        },
+        "GREEN_LABEL_PASTED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Yes"
+        },
+        "GREEN_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Checked"
+        },
+        "BLUE_LABEL_REMOVED": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "No"
+        },
+        "BLUE_LABEL_CHECK": {
+          "type": "string",
+          "maxLength": 10,
+          "x-example": "Unchecked"
+        },
+        "PICK_BY": {
+          "type": "string",
+          "maxLength": 25,
+          "x-example": "John Tan"
+        },
+        "PICK_BY_DATE": {
+          "type": "string",
+          "format": "date",
+          "x-example": "2025-07-14"
+        },
+        "TRANSFER_CHECK_BY": {
+          "type": "string",
+          "maxLength": 25,
+          "x-example": "Alice Lee"
+        },
+        "TRANSFER_CHECK_DATE": {
+          "type": "string",
+          "format": "date",
+          "x-example": "2025-07-15"
+        },
+        "MIX_LOT": {
+          "type": "string",
+          "maxLength": 50,
+          "x-example": "LOT-2025-A1"
+        },
+        "MIX_GRADE": {
+          "type": "string",
+          "maxLength": 20,
+          "x-example": "GRADE-B"
+        },
+		 "picklist_status": {
+          "type": "string",
+          "maxLength": 20,
+          "x-example": "OPEN"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Default": {
+      "description": "Default Authentication",
+      "type": "basic"
+    }
+  },
+  "security": [],
+  "tags": [
+    {
+      "name": "TBLEDI_MELS_TALLY_PILIST_SI",
+      "description": "Operations about TBLEDI_MELS_TALLY_PILIST_SI"
+    }
+  ]
+}
