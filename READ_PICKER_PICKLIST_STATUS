@@ -28,7 +28,7 @@
           {
             "name": "PICKLISTSTATUS",
             "in": "body",
-            "description": "Filter by picklist_status",
+            "description": "PICKLIST_STATUS",
             "required": true,
             "schema": {
               "$ref": "#/definitions/PICKLISTSTATUS"
@@ -62,7 +62,6 @@
                     "MIX_LOT": "LOT-2025-A1",
                     "MIX_GRADE": "GRADE-B",
 					"PICKLIST_STATUS": "OPEN"
-					
                   }
                 ],
                 "count": 1
@@ -190,11 +189,13 @@
           "type": "string",
           "maxLength": 20,
           "x-example": "GRADE-B"
+		  
         },
-		 "PICKLIST_STATUS": {
+		  "PICKLIST_STATUS": {
           "type": "string",
           "maxLength": 20,
           "x-example": "OPEN"
+		  
         }
       }
     }
@@ -212,4 +213,4 @@
       "description": "Operations about TBLEDI_MELS_TALLY_PILIST_SI"
     }
   ]
-}   
+}
