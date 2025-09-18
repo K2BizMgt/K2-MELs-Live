@@ -60,7 +60,8 @@
                     "TRANSFER_CHECK_BY": "Alice Lee",
                     "TRANSFER_CHECK_DATE": "2025-07-15",
                     "MIX_LOT": "LOT-2025-A1",
-                    "MIX_GRADE": "GRADE-B"
+                    "MIX_GRADE": "GRADE-B",
+					"PICKLIST_STATUS": "GRADE-B"
                   }
                 ],
                 "count": 1
@@ -188,6 +189,11 @@
           "type": "string",
           "maxLength": 20,
           "x-example": "GRADE-B"
+        },
+		 "PICKLIST_STATUS": {
+          "type": "string",
+          "maxLength": 20,
+          "x-example": "OPEN"
         }
       }
     }
