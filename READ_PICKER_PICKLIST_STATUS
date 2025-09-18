@@ -18,7 +18,7 @@
         "produces": ["application/json"],
         "parameters": [
           {
-            "name": "picklist_status",
+            "name": "body",
             "in": "body",
             "description": "Filter by picklist_status",
             "required": true,
@@ -92,8 +92,9 @@
         "picklist_status": {
           "type": "string",
           "maxLength": 20,
+          "enum": ["OPEN", "CLOSED", "ALL"],
           "x-example": "OPEN",
-          "description": "Filter status, e.g. OPEN / CLOSED"
+          "description": "Filter status. Use ALL to return all records."
         }
       }
     },
