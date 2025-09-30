@@ -63,7 +63,10 @@
 							"VIN_GRADES": null,
 							"CUSTCONTAINERPOS": null,
 							"EDI_STATUS": null,
-							"PROGRAM_TYPE": null
+							"PROGRAM_TYPE": null,
+							"SO_PICK_PALLET_ID": null,
+							"SO_PICK_LOCATION":null,
+							"SO_PICK_BAG_NO":null
 						}
 					}
 				}
@@ -187,6 +190,18 @@
 					"x-example": ""
 				},
 				"PROGRAM_TYPE": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SO_PICK_PALLET_ID": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SO_PICK_LOCATION": {
+					"type": "string",
+					"x-example": ""
+				},
+				"SO_PICK_BAG_NO": {
 					"type": "string",
 					"x-example": ""
 				}
