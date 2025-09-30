@@ -63,6 +63,9 @@
 							"VIN_GRADES": null,
 							"CUSTCONTAINERPOS":null,
 							"EDI_STATUS":null,
+							"SO_PICK_PALLET_ID": null,
+							"SO_PICK_LOCATION":null,
+							"SO_PICK_BAG_NO":null
 						
 							
 							
@@ -183,6 +186,18 @@
 					"x-example": ""
 				},
 				"EDI_STATUS": {
+					"type": "string",
+					"x-example": ""
+				},
+					"SO_PICK_PALLET_ID": {
+					"type": "string",
+					"x-example": ""
+				},
+					"SO_PICK_LOCATION": {
+					"type": "string",
+					"x-example": ""
+				},
+					"SO_PICK_BAG_NO": {
 					"type": "string",
 					"x-example": ""
 				}
