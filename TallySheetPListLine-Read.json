@@ -65,7 +65,7 @@
 							"EDI_STATUS": null,
 							"PROGRAM_TYPE": null,
 							"SO_PICK_PALLET_ID": null,
-							"SO_PICK_LOCATION":null,
+							"SO_PICK_STATUS":null,
 							"SO_PICK_BAG_NO":null
 						}
 					}
@@ -197,7 +197,7 @@
 					"type": "string",
 					"x-example": ""
 				},
-				"SO_PICK_LOCATION": {
+				"SO_PICK_STATUS": {
 					"type": "string",
 					"x-example": ""
 				},
@@ -222,3 +222,4 @@
 		}
 	]
 }
+
